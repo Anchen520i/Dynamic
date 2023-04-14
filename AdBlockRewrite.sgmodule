@@ -1,5 +1,5 @@
-#!name=AD Block
-#!desc=去除软件启动广告
+#!name=AdBlockRewrite
+#!desc=AdBlockRewrite
 #!author=Anchen520i
 #!repo=https://github.com/Anchen520i/
 #!reject=549
