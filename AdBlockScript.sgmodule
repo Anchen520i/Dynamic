@@ -21,7 +21,6 @@ URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/launch_v2\?,REJECT
 URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/real_time_launch_v2\?,REJECT
 URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJECT
 
-
 [URL Rewrite]
 "^https?:\/\/103\.41\.167\.237" - reject
 "^https?:\/\/118\.89\.204\.198" - reject
@@ -34,7 +33,6 @@ URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?,REJ
 "^https?:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/settings" - reject
 "^https?:\/\/api\.zhihu\.com\/feed\/render\/revisit\/current_reading" - reject
 "^https?:\/\/api\.zhihu\.com\/fringe\/ad" - reject
-
 
 [Script]
 哲也_解锁关键词屏蔽 = type=http-request,script-path=https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js,pattern="^https?:\/\/api\.zhihu\.com\/feed-root\/block"
