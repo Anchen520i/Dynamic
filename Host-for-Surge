@@ -48,3 +48,4 @@ hotspot.cslwifi.com = server:syslib
 
 # > LAN
 *.lan = server:syslib
+
