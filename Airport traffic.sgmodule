@@ -7,3 +7,4 @@ Sub_info = script-name=Sub_info,update-interval=3600
 
 [Script]
 Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Anchen520i/DynamicStudio/main/Airport%20traffic.js,script-update-interval=0,argument=url=此处填入机场链接&reset_day=1&title=𝑫𝒚𝒏𝒂𝒎𝒊𝒄 𝑺𝒕𝒖𝒅𝒊𝒐&icon=externaldrive.fill.badge.icloud=#007aff
+
