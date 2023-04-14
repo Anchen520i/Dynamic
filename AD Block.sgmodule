@@ -1,6 +1,6 @@
-#!name=Advertising
-#!desc=最后更新时间 2023-04-14 02:17:29
-#!author=blackmatrix7
+#!name=AD Block
+#!desc=去除软件启动广告
+#!author=Anchen520i
 #!repo=https://github.com/blackmatrix7/ios_rule_script
 #!reject=549
 #!mitm=506
