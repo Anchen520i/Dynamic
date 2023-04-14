@@ -1,7 +1,7 @@
 #!name=AdvertisingScript
-#!desc=最后更新时间 2023-04-07 14:53:12
-#!author=blackmatrix7
-#!repo=https://github.com/blackmatrix7/ios_rule_script
+#!desc=去除软件开启广告脚本
+#!author=Anchen520i
+#!repo=https://Anchen520i/
 #!domain=5
 #!url-regex=4
 #!http-request-script=1
