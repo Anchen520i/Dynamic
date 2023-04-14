@@ -43,3 +43,4 @@ _hotspot_.m2m = server:syslib
 hotspot.cslwifi.com = server:syslib
 # > LAN
 *.lan = server:syslib
+
