@@ -10,9 +10,6 @@
 [General]
 force-http-engine-hosts = %APPEND% *.ott.cibntv.net,intl.iqiyi.com,maicai.api.ddxq.mobi,mobileapi-v6.elong.com,weibointl.api.weibo.cn,wmapi.meituan.com
 
-
-
-
 [URL Rewrite]
 "^http:\/\/s3plus\.meituan\.net\/.*\/brandcpt-vedio\/.*\?time" - reject
 "^https:\/\/api\.sfacg\.com\/ioscfg" - reject
