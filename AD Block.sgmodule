@@ -1,7 +1,7 @@
 #!name=AD Block
 #!desc=去除软件启动广告
 #!author=Anchen520i
-#!repo=https://github.com/blackmatrix7/ios_rule_script
+#!repo=https://github.com/Anchen520i/
 #!reject=549
 #!mitm=506
 #!force-http-engine-hosts=6
