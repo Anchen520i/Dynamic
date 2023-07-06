@@ -13,7 +13,7 @@ Apple下载示例↓↓↓
 AND,((DOMAIN,iosapps.itunes.apple.com), (SCRIPT,策略优选)),Apple
 
 [Script]
-策略优选 = type=rule,timeout=60,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/speedLimit.js,argument="Return=10min,Group=Apple&policy=DIRECT,PROXY,Support&time=15&minSpeed=20"
+策略优选 = type=rule,timeout=60,script-path=https://raw.githubusercontent.com/Anchen520i/DynamicStudio/main/Strategy-optimization.js,argument="Return=10min,Group=Apple&policy=DIRECT,PROXY,Support&time=15&minSpeed=20"
 
 ----------------------------------------
 
