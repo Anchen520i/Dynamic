@@ -53,6 +53,7 @@ DOMAIN-SUFFIX,beacons2.gvt2.com
 DOMAIN-SUFFIX,beacons3.gvt2.com
 DOMAIN-SUFFIX,beatthatquote.com
 DOMAIN-SUFFIX,blink.org
+DOMAIN-SUFFIX,blog.google
 DOMAIN-SUFFIX,blogblog.com
 DOMAIN-SUFFIX,blogger.com
 DOMAIN-SUFFIX,blogspot.ae
@@ -206,6 +207,8 @@ DOMAIN-SUFFIX,fastlane.tools
 DOMAIN-SUFFIX,feedburner.com
 DOMAIN-SUFFIX,fflick.com
 DOMAIN-SUFFIX,financeleadsonline.com
+DOMAIN-SUFFIX,firebase.com
+DOMAIN-SUFFIX,firebase.io
 DOMAIN-SUFFIX,firebaseapp.com
 DOMAIN-SUFFIX,firebaseio.com
 DOMAIN-SUFFIX,flutter.dev
@@ -505,6 +508,7 @@ DOMAIN-SUFFIX,googletraveladservices-cn.com
 DOMAIN-SUFFIX,googletraveladservices.com
 DOMAIN-SUFFIX,googlevads-cn.com
 DOMAIN-SUFFIX,googleventures.com
+DOMAIN-SUFFIX,googlezip.net
 DOMAIN-SUFFIX,googlr.com
 DOMAIN-SUFFIX,goolge.com
 DOMAIN-SUFFIX,gooogle.com
@@ -535,6 +539,7 @@ DOMAIN-SUFFIX,html5rocks.com
 DOMAIN-SUFFIX,hwgo.com
 DOMAIN-SUFFIX,iam.soy
 DOMAIN-SUFFIX,iamremarkable.org
+DOMAIN-SUFFIX,idx.dev
 DOMAIN-SUFFIX,igoogle.com
 DOMAIN-SUFFIX,impermium.com
 DOMAIN-SUFFIX,itasoftware.com
@@ -542,6 +547,8 @@ DOMAIN-SUFFIX,j2objc.org
 DOMAIN-SUFFIX,jibemobile.com
 DOMAIN-SUFFIX,kaggle.com
 DOMAIN-SUFFIX,kaggle.io
+DOMAIN-SUFFIX,kaggle.net
+DOMAIN-SUFFIX,kaggleusercontent.com
 DOMAIN-SUFFIX,keyhole.com
 DOMAIN-SUFFIX,keytransparency.com
 DOMAIN-SUFFIX,keytransparency.foo
@@ -719,7 +726,6 @@ DOMAIN-KEYWORD,appspot
 DOMAIN-KEYWORD,blogspot
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,google
-DOMAIN-KEYWORD,gstatic
 DOMAIN-KEYWORD,recaptcha
 IP-CIDR,172.110.32.0/21,no-resolve
 IP-CIDR,173.194.0.0/16,no-resolve
@@ -733,4 +739,4 @@ PROCESS-NAME,com.android.vending
 PROCESS-NAME,com.google.android.gms
 PROCESS-NAME,com.google.android.gsf
 PROCESS-NAME,com.google.android.play.games
-PROCESS-NAME,backupandsync
+PROCESS-NAME,BackupandSync
