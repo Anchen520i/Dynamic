@@ -1,0 +1,12 @@
+#!name=WPS 解锁超级会员 Pro
+#!desc=WPS 解锁超级会员 Pro
+#脚本作者:Hausd0rff
+#更新时间:2023-06-04
+#使用声明：️脚本仅供学习交流, 🈲️商业用途
+
+[Script]
+WPS 解锁超级会员 Pro = type=http-response,pattern=^https?:\/\/(account|drive|vas|userinfo.docer)\.wps\.cn\/(.*api\/(v3\/(mine\/vips|spaces)|users\/\d+\/overview|v1\/list_purchase_info)|user\/v1\/vip_dl_times),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSuperVIPuserCrack.js
+WPS 解锁超级会员 Pro = type=http-request,pattern=^https?:\/\/(mobile|client|vas|download)(\.docer)?\.wps.cn\/(android\/mb\/buy_info|api\/v1\/mobile\/mb\/detail|query\/api\/v1\/list_privilege_info|download\/adapter\/v1\/mb),requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSuperVIPowerCrack.js
+
+[MITM]
+hostname= %APPEND% *.wps.cn
