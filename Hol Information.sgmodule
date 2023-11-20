@@ -1,5 +1,5 @@
-#!name=𝑯𝒐𝒍 𝒊𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒐𝒏
-#!desc=𝐻𝑜𝑙 𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛✦𝐴𝑛𝑐ℎ𝑒𝑛
+#!name=𝐇𝐨𝐥 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧
+#!desc=显示节假日信息
 #!system=ios
 
 [Panel]
@@ -7,4 +7,3 @@ Timecard = script-name=Timecard,update-interval=3600
 
 [Script]
 Timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Anchen520i/DynamicStudio/main/Timecard.js
-
