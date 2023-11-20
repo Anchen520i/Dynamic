@@ -116,4 +116,3 @@ function formatTime(time) {
   let day = dateObj.getDate();
   return year + "年" + month + "月" + day + "日";
 }
-
