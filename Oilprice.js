@@ -1,7 +1,7 @@
 [Panel]
-Oilprice = script-name=Oilprice,update-interval=43200
+YJ = script-name=YJ,update-interval=43200
 [Script]
-Oilprice = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/Oilprice.js,argument=guangdong
+YJ = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/script/youjia.js,argument=guangdong
 */
 
 var region = 'shanxi-3/xian'
@@ -30,7 +30,7 @@ $httpClient.get(
         },
     }, (error, response, data) => {
         if (error) {
-            console.log(`解析油价信息失败, 请反馈至 @RS0485: URL=${query_addr}`)
+            console.log(`解析油价信息失败, 请反馈至QQ1744243109: URL=${query_addr}`)
             done({});
         }
         else {
@@ -84,12 +84,12 @@ $httpClient.get(
             const friendly_tips = `${adjust_date} ${adjust_trend} ${adjust_value}`
 
             if (prices.length !== 4) {
-                console.log(`解析油价信息失败, 数量=${prices.length}, 请反馈至 @RS0485: URL=${query_addr}`)
+                console.log(`解析油价信息失败, 数量=${prices.length}, 请反馈至QQ1744243109: URL=${query_addr}`)
                 done({})
             }
             else {
                 body = {
-                    title: "实时油价",
+                    title: "实时油价信息",
                     content: `${prices[0].name}  ${prices[0].value}\n${prices[1].name}  ${prices[1].value}\n${prices[2].name}  ${prices[2].value}\n${prices[3].name}  ${prices[3].value}\n${friendly_tips}`,
                     icon: "fuelpump.fill"
                 }
