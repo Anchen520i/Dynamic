@@ -1,9 +1,15 @@
 DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tx.me
+DOMAIN-SUFFIX,legra.ph
+DOMAIN-SUFFIX,graph.org
 DOMAIN-SUFFIX,telesco.pe
 DOMAIN-SUFFIX,telegra.ph
 DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,tdesktop.com
 DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,telegram-cdn.org
+PROCESS-NAME,org.telegram.messenger
 IP-ASN,44907,no-resolve
 IP-ASN,59930,no-resolve
 IP-ASN,62014,no-resolve
@@ -24,17 +30,7 @@ IP-CIDR6,2001:b28:f23c::/48,no-resolve
 IP-CIDR6,2001:b28:f23d::/48,no-resolve
 IP-CIDR6,2001:b28:f23f::/48,no-resolve
 
-DOMAIN-SUFFIX,comments.app // @CommentsBot
-DOMAIN-SUFFIX,graph.org
-DOMAIN-SUFFIX,legra.ph
-DOMAIN-SUFFIX,t.me
-DOMAIN-SUFFIX,tdesktop.com
-DOMAIN-SUFFIX,telegra.ph // Telegraph
-DOMAIN-SUFFIX,telegram-cdn.org
-DOMAIN-SUFFIX,telegram.me
-DOMAIN-SUFFIX,telegram.org
-DOMAIN-SUFFIX,telesco.pe // Telescope
-DOMAIN-SUFFIX,tx.me
+
 
 IP-CIDR,109.239.140.0/24,no-resolve
 IP-CIDR,149.154.160.0/22,no-resolve
@@ -56,4 +52,4 @@ IP-CIDR6,2001:b28:f23c::/48,no-resolve
 IP-CIDR6,2001:b28:f23d::/48,no-resolve
 IP-CIDR6,2001:b28:f23f::/48,no-resolve
 IP-CIDR6,2a0a:f280::/32,no-resolve
-PROCESS-NAME,org.telegram.messenger
+
