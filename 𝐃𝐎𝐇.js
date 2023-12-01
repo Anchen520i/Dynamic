@@ -1,4 +1,4 @@
-const dns = 'h3://dns.alidns.com/dns-query'
+const dns = 'https://223.5.5.5/dns-query'
 const timeout = 2 * 1000
 const type = ['A', 'AAAA']
 const ttl = 600
