@@ -2,6 +2,7 @@
     "name": "Anchen520i",
     "icons": [
          { "name": "Surge", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Surge.png"},
+         { "name": "Gemini", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Gemini.png"},
          { "name": "Claude", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Claude.png"},
          { "name": "YouTube", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/YouTube.png"},
          { "name": "UnitedStates", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/UnitedStates.png"},
@@ -14,7 +15,6 @@
          { "name": "Japan", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Japan.png"},
          { "name": "HongKong", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/HongKong.png"},
          { "name": "HBO", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/HBO.png"},
-         { "name": "Gemini", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Gemini.png"},
          { "name": "Disney", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Disney.png"},
          { "name": "Copilot", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Copilot.png"},
          { "name": "China", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/China.png"},
