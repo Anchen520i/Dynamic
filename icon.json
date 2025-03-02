@@ -2,7 +2,6 @@
     "name": "GitHub@Anchen520i",
     "icons": [
          { "name": "Surge", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Surge.png"},
-         { "name": "Gemini", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Gemini.png"},
          { "name": "Claude", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Claude.png"},
          { "name": "YouTube", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/YouTube.png"},
          { "name": "UnitedStates", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/UnitedStates.png"},
@@ -20,6 +19,7 @@
          { "name": "China", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/China.png"},
          { "name": "ChatGPT", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/ChatGPT.png"},
          { "name": "Bilibili", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Bilibili.png"},
+         { "name": "Gemini", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Gemini.png"},
     ]
 }
 
