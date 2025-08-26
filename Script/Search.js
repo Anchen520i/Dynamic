@@ -1,21 +1,4 @@
-/*
- * Surge Search Redirect Script
- *
- * This script redirects specific Google search queries to other search engines or services.
- * It consolidates multiple rewrite rules into a single, efficient, and maintainable script.
- *
- * Author: Gemini AI
- * Version: 2.0.0
- *
- * How to use in Surge:
- * 1. Add this script to your Surge configuration under the [Script] section.
- * e.g., searchRedirect = type=http-request,pattern=^https?://www\.google\.[^/]+/search\?.*q=([a-zA-Z]{2})(\+|%20)+([^&]+),script-path=search-redirect.js
- * 2. The script will handle the redirection logic.
- */
 
-// --- Configuration ---
-// Define the mapping from search prefixes to their target URL templates.
-// The '$1' placeholder will be replaced with the actual search query.
 const redirectMap = new Map([
     ['gh', 'https://github.com/search?q=$1&type=users'],      // GitHub Users
     ['bi', 'https://www.bing.com/search?q=$1&setmkt=zh-CN'],  // Bing (Simplified Chinese)
