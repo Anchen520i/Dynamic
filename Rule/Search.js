@@ -1,0 +1,127 @@
+[General]
+# 𝐃𝐍𝐒
+dns-server = 223.5.5.5, 119.29.29.29, system
+use-local-host-item-for-proxy = true
+# 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐚𝐥
+internet-test-url = http://cn.aliyun.com
+proxy-test-url = http://cp.cloudflare.com/generate_204
+geoip-maxmind-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
+# 𝐀𝐥𝐥𝐨𝐰 𝐖𝐢-𝐅𝐢 𝐚𝐧𝐝 𝐚𝐧𝐝 𝐇𝐨𝐭𝐬𝐩𝐨𝐭 𝐀𝐜𝐜𝐞𝐬𝐬
+allow-wifi-access = true
+allow-hotspot-access = true
+# 𝐀𝐱𝐭𝐞𝐫𝐧𝐚𝐥 𝐂𝐨𝐧𝐭𝐫𝐨𝐥𝐥𝐞𝐫 𝐀𝐜𝐜𝐞𝐬𝐬
+external-controller-access = 980114@0.0.0.0:6170
+# 𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝
+show-error-page-for-reject = true
+encrypted-dns-follow-outbound-mode = true
+encrypted-dns-skip-cert-verification = true
+hijack-dns = *:53
+always-real-ip = *.lan, *.direct
+force-http-engine-hosts = *:8443, *:8080
+skip-proxy = 127.0.0.1, localhost, *.local, 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/24, 192.168.3.0/24, 169.254.0.0/16, 100.64.0.0/10, captive.apple.com, e.crashlytics.com
+exclude-simple-hostnames = true
+
+[Proxy]
+𝐃𝐢𝐫𝐞𝐜𝐭 = direct
+𝐑𝐞𝐟𝐮𝐬𝐞 = reject
+
+[Proxy Group]
+𝐀𝐜𝐡𝐞𝐫 = smart, policy-path=https://sub.kwk7thgc.com/?L1N1YnNjcmlwdGlvbi9TdXJnZT90Zm89MCZzaWQ9MjY1NDMmdG9rZW49dWtLVTl5U3ZPaUombW09MzY2Mjkma3RtbT1hcDJMS25PcXFvNzNuTUg3JTJia1VyR1ElM2QlM2QmZjQ1ZmIwYw==, policy-priority=香:0.5;台:0.6;新:0.7;日:0.8;美:0.9, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Surge.png, update-interval=-1, policy-regex-filter=日|台|美|港|新
+𝐀𝐫𝐞𝐚 = select, 𝐉𝐚𝐩𝐚𝐧, 𝐓𝐚𝐢𝐖𝐚𝐧, 𝐀𝐦𝐞𝐫𝐢𝐜𝐚, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Earth.png
+𝐁𝐢𝐥𝐢𝐛𝐢𝐥𝐢 = select, 𝐃𝐢𝐫𝐞𝐜𝐭, 𝐓𝐚𝐢𝐖𝐚𝐧, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Bilibili.png
+𝐂𝐥𝐚𝐮𝐝𝐞 = select, 𝐉𝐚𝐩𝐚𝐧, 𝐓𝐚𝐢𝐖𝐚𝐧, 𝐀𝐦𝐞𝐫𝐢𝐜𝐚, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Claude.png
+𝐂𝐨𝐩𝐢𝐥𝐨𝐭 = select, 𝐉𝐚𝐩𝐚𝐧, 𝐓𝐚𝐢𝐖𝐚𝐧, 𝐀𝐦𝐞𝐫𝐢𝐜𝐚, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Copilot.png
+𝐂𝐡𝐚𝐭𝐆𝐏𝐓 = select, 𝐉𝐚𝐩𝐚𝐧, 𝐓𝐚𝐢𝐖𝐚𝐧, 𝐀𝐦𝐞𝐫𝐢𝐜𝐚, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/ChatGPT.png
+𝐃𝐢𝐬𝐧𝐞𝐲 = select, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, persistent=1, include-other-group=𝐀𝐫𝐞𝐚, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Disney.png
+𝐆𝐞𝐦𝐢𝐧𝐢 = select, 𝐉𝐚𝐩𝐚𝐧, 𝐓𝐚𝐢𝐖𝐚𝐧, 𝐀𝐦𝐞𝐫𝐢𝐜𝐚, 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Gemini.png
+𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 = fallback, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, persistent=1, include-other-group=𝐀𝐫𝐞𝐚, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Instagram.png
+𝐍𝐞𝐭𝐟𝐥𝐢𝐱 = select, 𝐉𝐚𝐩𝐚𝐧, 𝐓𝐚𝐢𝐖𝐚𝐧, 𝐀𝐦𝐞𝐫𝐢𝐜𝐚, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, 𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Netflix.png
+𝐒𝐩𝐨𝐭𝐢𝐟𝐲 = fallback, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, persistent=1, include-other-group=𝐀𝐫𝐞𝐚, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Spotify.png
+𝐓𝐢𝐤𝐓𝐨𝐤 = select, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, persistent=1, include-other-group=𝐀𝐫𝐞𝐚, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Tiktok.png
+𝐓𝐰𝐢𝐭𝐭𝐞𝐫 = fallback, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, persistent=1, include-other-group=𝐀𝐫𝐞𝐚, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Twitter.png
+𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 = fallback, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, persistent=1, include-other-group=𝐀𝐫𝐞𝐚, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Telegram.png
+𝐘𝐨𝐮𝐓𝐮𝐛𝐞 = fallback, 𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠, persistent=1, include-other-group=𝐀𝐫𝐞𝐚, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/YouTube.png
+𝐉𝐚𝐩𝐚𝐧 = smart, include-other-group=𝐀𝐜𝐡𝐞𝐫, policy-regex-filter=🇯🇵|日|JP, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Japan.png
+𝐓𝐚𝐢𝐖𝐚𝐧 = smart, include-other-group=𝐀𝐜𝐡𝐞𝐫, policy-regex-filter=🇨🇳|台|TW, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/TaiWan.png
+𝐀𝐦𝐞𝐫𝐢𝐜𝐚 = smart, include-other-group=𝐀𝐜𝐡𝐞𝐫, policy-regex-filter=🇺🇸|美|US, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/UnitedStates.png
+𝐇𝐨𝐧𝐠𝐊𝐨𝐧𝐠 = smart, include-other-group=𝐀𝐜𝐡𝐞𝐫, policy-regex-filter=🇭🇰|港|HK, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/HongKong.png
+𝐒𝐢𝐧𝐠𝐚𝐩𝐨𝐫𝐞 = smart, include-other-group=𝐀𝐜𝐡𝐞𝐫, policy-regex-filter=🇸🇬|新|SG, icon-url=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Singapore.png
+
+[Rule]
+# 𝐑𝐞𝐟𝐮𝐬𝐞
+OR,((IP-CIDR,0.0.0.0/32), (IP-CIDR,95.161.76.100/31), (DOMAIN,msmp.abchina.com.cn)),𝐑𝐞𝐟𝐮𝐬𝐞,pre-matching
+# 𝐁𝐢𝐥𝐢𝐛𝐢𝐥𝐢
+RULE-SET,http://octopus/Bilibili,𝐁𝐢𝐥𝐢𝐛𝐢𝐥𝐢
+# 𝐂𝐥𝐚𝐮𝐝𝐞
+RULE-SET,http://octopus/Claude,𝐂𝐥𝐚𝐮𝐝𝐞
+# 𝐂𝐨𝐩𝐢𝐥𝐨𝐭
+RULE-SET,http://octopus/Copilot,𝐂𝐨𝐩𝐢𝐥𝐨𝐭
+# 𝐂𝐡𝐚𝐭𝐆𝐏𝐓
+DOMAIN-SUFFIX,sentry.io,𝐑𝐞𝐟𝐮𝐬𝐞,pre-matching
+RULE-SET,http://octopus/ChatGPT,𝐂𝐡𝐚𝐭𝐆𝐏𝐓
+# 𝐃𝐢𝐬𝐧𝐞𝐲
+RULE-SET,http://octopus/Disney,𝐃𝐢𝐬𝐧𝐞𝐲
+# 𝐆𝐞𝐦𝐢𝐧𝐢
+RULE-SET,http://octopus/Gemini,𝐆𝐞𝐦𝐢𝐧𝐢
+# 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦
+RULE-SET,http://octopus/Instagram,𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦
+# 𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+RULE-SET,http://octopus/Netflix,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+# 𝐒𝐩𝐨𝐭𝐢𝐟𝐲
+RULE-SET,http://octopus/Spotify,𝐒𝐩𝐨𝐭𝐢𝐟𝐲
+# 𝐓𝐢𝐤𝐓𝐨𝐤
+RULE-SET,http://octopus/TikTok,𝐓𝐢𝐤𝐓𝐨𝐤
+# 𝐓𝐰𝐢𝐭𝐭𝐞𝐫
+RULE-SET,http://octopus/Twitter,𝐓𝐰𝐢𝐭𝐭𝐞𝐫
+# 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+RULE-SET,http://octopus/Telegram,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+# 𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+RULE-SET,http://octopus/YouTube,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+# 𝐀𝐩𝐩𝐥𝐞
+RULE-SET,http://octopus/Apple,𝐀𝐜𝐡𝐞𝐫
+# 𝐒𝐩𝐞𝐞𝐝𝐭𝐞𝐬𝐭
+RULE-SET,http://octopus/Speedtest,𝐃𝐢𝐫𝐞𝐜𝐭
+# 𝐂𝐍
+# 𝐋𝐚𝐧
+# 𝐒𝐲𝐬𝐭𝐞𝐦
+OR,((GEOIP,CN), (RULE-SET,LAN), (RULE-SET,SYSTEM)),𝐃𝐢𝐫𝐞𝐜𝐭
+# 𝐅𝐢𝐧𝐚𝐥
+FINAL,𝐀𝐜𝐡𝐞𝐫,dns-failed
+
+[Host]
+# 𝐋𝐚𝐧
+*.lan = server:syslib
+
+[URL Rewrite]
+# 𝐆𝐨𝐨𝐠𝐥𝐞
+^https?://(?:www\.)?(?:g|google)\.cn(.*)$ https://www.google.com$1 302
+# 𝐆𝐢𝐭𝐇𝐮𝐛
+^https?://octopus/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/Rule/$1.list 302
+# 𝐆𝐢𝐭𝐇𝐮𝐛 𝐔𝐬𝐞𝐫𝐬
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=gh(?:\+|%20)+([^&]+)(?:&.*)?$ https://github.com/search?q=$1&type=users 302
+# 𝐁𝐢𝐧𝐠
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=bi(?:\+|%20)+([^&]+)(?:&.*)?$ https://www.bing.com/search?q=$1&setmkt=zh-CN&setlang=zh-CN 302
+# 𝐁𝐚𝐢𝐝𝐮
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=bd(?:\+|%20)+([^&]+)(?:&.*)?$ https://www.baidu.com/s?wd=$1&ie=utf-8 302
+# 𝐃𝐮𝐜𝐤𝐃𝐮𝐜𝐤𝐆𝐨
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=ddg(?:\+|%20)+([^&]+)(?:&.*)?$ https://duckduckgo.com/?q=$1 302
+# 𝐓𝐚𝐨𝐛𝐚𝐨
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=tb(?:\+|%20)+([^&]+)(?:&.*)?$ https://s.taobao.com/search?q=$1 302
+# 𝐓𝐢𝐚𝐧𝐦𝐚𝐨
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=tm(?:\+|%20)+([^&]+)(?:&.*)?$ https://list.tmall.com/search_product.htm?q=$1 302
+# 𝐉𝐢𝐧𝐠𝐝𝐨𝐧𝐠
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=jd(?:\+|%20)+([^&]+)(?:&.*)?$ https://search.jd.com/Search?keyword=$1&enc=utf-8 302
+
+[MITM]
+skip-server-cert-verify = true
+tcp-connection = true
+h2 = true
+hostname = wx.10099.com.cn, *.lrts.me, *.kuwo.cn, api.m.jd.com, *.google.com, *.google.cn, weixin110.qq.com, security.wechat.com
+ca-passphrase = B6680118
+ca-p12 = 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
+
+[Script]
+# 𝐊𝐮𝐰𝐨 𝐌𝐮𝐬𝐢𝐜
+𝐊𝐮𝐰𝐨 𝐌𝐮𝐬𝐢𝐜 = type=http-response,pattern=^https?:\/\/(?:musicpay|nmobi|vip1|audiobookpay|tingshu)\.kuwo\.cn\/(?:music\.pay\?newver=\d+|mobi.s\?f=kwxs|vip\/(?:enc\/user\/vip\?op=ui&uid=|v2\/theme\?op=gd)|a\.p|v2\/api\/pay\/user\/info),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Yuheng0101/X/refs/heads/main/Scripts/kuwo.js,binary-body-mode=0,script-update-interval=0
+# 𝐑𝐞𝐦𝐨𝐯𝐞 𝐖𝐞𝐂𝐡𝐚𝐭 𝐋𝐢𝐧𝐤 𝐑𝐞𝐬𝐭𝐫𝐢𝐜𝐭𝐢𝐨𝐧
+𝐑𝐞𝐦𝐨𝐯𝐞 𝐖𝐞𝐂𝐡𝐚𝐭 𝐋𝐢𝐧𝐤 𝐑𝐞𝐬𝐭𝐫𝐢𝐜𝐭𝐢𝐨𝐧 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/Script/UnblockURLinWeChat.js
