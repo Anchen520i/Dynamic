@@ -1,0 +1,25 @@
+#!name=Google Rewrite
+#!author=Acher
+
+[URL Rewrite]
+# 𝐆𝐨𝐨𝐠𝐥𝐞
+^https?://(?:www\.)?(?:g|google)\.cn(.*)$ https://www.google.com$1 302
+# 𝐆𝐢𝐭𝐇𝐮𝐛
+^https?://octopus/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/Rule/$1.list 302
+# 𝐆𝐢𝐭𝐇𝐮𝐛 𝐔𝐬𝐞𝐫𝐬
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=gh(?:\+|%20)+([^&]+)(?:&.*)?$ https://github.com/search?q=$1&type=users 302
+# 𝐁𝐢𝐧𝐠
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=bi(?:\+|%20)+([^&]+)(?:&.*)?$ https://www.bing.com/search?q=$1&setmkt=zh-CN&setlang=zh-CN 302
+# 𝐁𝐚𝐢𝐝𝐮
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=bd(?:\+|%20)+([^&]+)(?:&.*)?$ https://www.baidu.com/s?wd=$1&ie=utf-8 302
+# 𝐃𝐮𝐜𝐤𝐃𝐮𝐜𝐤𝐆𝐨
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=ddg(?:\+|%20)+([^&]+)(?:&.*)?$ https://duckduckgo.com/?q=$1 302
+# 𝐓𝐚𝐨𝐛𝐚𝐨
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=tb(?:\+|%20)+([^&]+)(?:&.*)?$ https://s.taobao.com/search?q=$1 302
+# 𝐓𝐢𝐚𝐧𝐦𝐚𝐨
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=tm(?:\+|%20)+([^&]+)(?:&.*)?$ https://list.tmall.com/search_product.htm?q=$1 302
+# 𝐉𝐢𝐧𝐠𝐝𝐨𝐧𝐠
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=jd(?:\+|%20)+([^&]+)(?:&.*)?$ https://search.jd.com/Search?keyword=$1&enc=utf-8 302
+
+[MITM]
+hostname = *.google.com, *.google.cn
