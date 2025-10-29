@@ -23,4 +23,4 @@
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=jd(?:\+|%20)+([^&]+)(?:&.*)?$ https://search.jd.com/Search?keyword=$1&enc=utf-8 302
 
 [MITM]
-hostname = *.google.com, *.google.cn
+hostname = %APPEND% *.google.com, *.google.cn
