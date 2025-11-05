@@ -1,100 +1,64 @@
-[Panel]
-Oilprice = script-name=Oilprice,update-interval=43200
-[Script]
-Oilprice = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/Oilprice.js,argument=guangdong
-*/
+const params = getParams($argument);
+const provinceName = params.provname || "江苏";
+const apiUrls = [
+  `https://apis.tianapi.com/oilprice/index?key=231de491563c35731436829ac52aad43&prov=${encodeURIComponent(provinceName)}`,
+  `https://apis.tianapi.com/oilprice/index?key=a2bc7a0e01be908881ff752677cf94b7&prov=${encodeURIComponent(provinceName)}`,
+  `https://apis.tianapi.com/oilprice/index?key=1bcc67c0114bc39a8818c8be12c2c9ac&prov=${encodeURIComponent(provinceName)}`,
+  `https://apis.tianapi.com/oilprice/index?key=3c5ee42145c852de4147264f25b858dc&prov=${encodeURIComponent(provinceName)}`,
+  `https://apis.tianapi.com/oilprice/index?key=d718b0f7c2b6d71cb3a9814e90bf847f&prov=${encodeURIComponent(provinceName)}`
+];
+let currentIndex = 0;
 
-var region = 'shanxi-3/xian'
+function testNextUrl() {
+  if (currentIndex >= apiUrls.length) {
+    console.log("All URLs failed");
+    $done();
+    return;
+  }
 
-if (typeof $argument !== 'undefined' && $argument !== '') {
-    region = $argument
+  const apiUrl = apiUrls[currentIndex];
+
+  $httpClient.get(apiUrl, (error, response, data) => {
+    if (error) {
+      console.log(`Error for URL ${currentIndex + 1}: ${error}`);
+      currentIndex++;
+      testNextUrl();
+    } else {
+      handleResponse(data);
+    }
+  });
 }
 
-try{
-//持久化适合远程引用不添加本地模块
-//工具>脚本编辑器>左下角齿轮图标>$persistentStore
-const region_pref = $persistentStore.read("Oilprice");
-	if (typeof region_pref !== 'undefined' && region_pref !== null) { //Surge Loon写法
-		console.log("2")
-    region = region_pref
-}}catch(i){}
+function handleResponse(data) {
+  const oilPriceData = JSON.parse(data);
+  console.log(oilPriceData);
 
-const query_addr = `http://m.qiyoujiage.com/${region}.shtml`
+  if (oilPriceData.code === 200) {
+    const oilPriceInfo = oilPriceData.result;
+    const message = `地区：${oilPriceInfo.prov}\n0号柴油：${oilPriceInfo.p0}元/升\n89号汽油：${oilPriceInfo.p89}元/升\n92号汽油：${oilPriceInfo.p92}元/升\n95号汽油：${oilPriceInfo.p95}元/升\n98号汽油：${oilPriceInfo.p98}元/升\n更新时间：${oilPriceInfo.time}`;
 
-$httpClient.get(
-    {
-        url: query_addr,
-        headers: {
-            'referer': 'http://m.qiyoujiage.com/',
-            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
-        },
-    }, (error, response, data) => {
-        if (error) {
-            console.log(`解析油价信息失败, 请反馈至QQ1744243109: URL=${query_addr}`)
-            done({});
-        }
-        else {
-            const reg_price = /<dl>[\s\S]+?<dt>(.*油)<\/dt>[\s\S]+?<dd>(.*)\(元\)<\/dd>/gm
+    const body = {
+      title: "今日油价",
+      content: message,
+      provname: params.provname,
+      icon: params.icon,
+      "icon-color": params.color
+    };
+    $done(body);
+  } else {
+    console.log(`请求失败，错误信息：${oilPriceData.msg}`);
+    currentIndex++;
+    testNextUrl();
+  }
+}
 
-            var prices = []
-            var m = null;
+function getParams(param) {
+  return Object.fromEntries(
+    param
+      .split("&")
+      .map((item) => item.split("="))
+      .map(([k, v]) => [k, decodeURIComponent(v)])
+  );
+}
 
-            while ((m = reg_price.exec(data)) !== null) {
-                // This is necessary to avoid infinite loops with zero-width matches
-                if (m.index === reg_price.lastIndex) {
-                    reg_price.lastIndex++;
-                }
-
-                prices.push({
-                    name: m[1],
-                    value: `${m[2]} 元/L`
-                })
-            }
-
-            // 解析油价调整趋势
-            var adjust_date = ''
-            var adjust_trend = ''
-            var adjust_value = ''
-
-            const reg_adjust_tips = /<div class="tishi"> <span>(.*)<\/span><br\/>([\s\S]+?)<br\/>/
-            const adjust_tips_match = data.match(reg_adjust_tips)
-
-            if (adjust_tips_match && adjust_tips_match.length === 3) {
-                adjust_date = adjust_tips_match[1].split('价')[1].slice(0, -2)
-
-                adjust_value = adjust_tips_match[2]
-                adjust_trend = (adjust_value.indexOf('下调') > -1 || adjust_value.indexOf('下跌') > -1) ? '↓' : '↑'
-
-                const adjust_value_re = /([\d\.]+)元\/升-([\d\.]+)元\/升/
-                const adjust_value_re2 = /[\d\.]+元\/吨/
-                const adjust_value_match = adjust_value.match(adjust_value_re)
-
-                if (adjust_value_match && adjust_value_match.length === 3) {
-                    adjust_value = `${adjust_value_match[1]}-${adjust_value_match[2]}元/L`
-                }
-                else {
-                    const adjust_value_match2 = adjust_value.match(adjust_value_re2)
-
-                    if (adjust_value_match2) {
-                        adjust_value = adjust_value_match2[0]
-                    }
-                }
-            }
-
-            const friendly_tips = `${adjust_date} ${adjust_trend} ${adjust_value}`
-
-            if (prices.length !== 4) {
-                console.log(`解析油价信息失败, 数量=${prices.length}, 请反馈至QQ1744243109: URL=${query_addr}`)
-                done({})
-            }
-            else {
-                body = {
-                    title: "实时油价",
-                    content: `${prices[0].name}  ${prices[0].value}\n${prices[1].name}  ${prices[1].value}\n${prices[2].name}  ${prices[2].value}\n${prices[3].name}  ${prices[3].value}\n${friendly_tips}`,
-                    icon: "fuelpump.fill"
-                }
-
-                $done(body);
-            }
-        }
-    });
+testNextUrl();
