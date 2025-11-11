@@ -7,6 +7,7 @@
 ^https?://(?:www\.)?(?:g|google)\.cn(.*)$ https://www.google.com$1 302
 # 𝐆𝐢𝐭𝐇𝐮𝐛
 ^https?://octopus/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/Rule/$1.list 302
+^https?://acher/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/icon/$1.png 302
 # 𝐆𝐢𝐭𝐇𝐮𝐛 𝐔𝐬𝐞𝐫𝐬
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=gh(?:\+|%20)+([^&]+)(?:&.*)?$ https://github.com/search?q=$1&type=users 302
 # 𝐁𝐢𝐧𝐠
