@@ -1,6 +1,11 @@
 {
     "name": "GitHub@Anchen520i",
     "icons": [
+         { "name": "hongkong", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/hongkong.png"},
+         { "name": "japan", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/japan.png"},
+         { "name": "singapore", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/singapore.png"},
+         { "name": "taiwan", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/taiwan.png"},
+         { "name": "usa", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/usa.png"},
          { "name": "Apple", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Apple.png"},
          { "name": "Safari", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Safari.png"},
          { "name": "Instagram", "url": "https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/Instagram.png"},
