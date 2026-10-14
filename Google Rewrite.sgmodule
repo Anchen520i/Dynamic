@@ -17,7 +17,7 @@
 # 𝐃𝐮𝐜𝐤𝐃𝐮𝐜𝐤𝐆𝐨
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=ddg(?:\+|%20)+([^&]+)(?:&.*)?$ https://duckduckgo.com/?q=$1 302
 # Rourer
-(?i)^https?://www\.google\.[^/]+/search\?.*?q=t(?:\+|%20)+([^&]+)(?:&.*)?$ https://www.google.com$1 302
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=t(?:\+|%20)+([^&]+)(?:&.*)?$ https://router.com 302
 # 𝐓𝐚𝐨𝐛𝐚𝐨
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=tb(?:\+|%20)+([^&]+)(?:&.*)?$ https://s.taobao.com/search?q=$1 302
 # 𝐓𝐢𝐚𝐧𝐦𝐚𝐨
