@@ -16,8 +16,6 @@
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=bd(?:\+|%20)+([^&]+)(?:&.*)?$ https://www.baidu.com/s?wd=$1&ie=utf-8 302
 # 𝐃𝐮𝐜𝐤𝐃𝐮𝐜𝐤𝐆𝐨
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=ddg(?:\+|%20)+([^&]+)(?:&.*)?$ https://duckduckgo.com/?q=$1 302
-# Rourer
-(?i)^https?://www\.google\.[^/]+/search\?.*?q=r(?:\+|%20)+([^&]+)(?:&.*)?$ https://www.router.com 302
 # 𝐓𝐚𝐨𝐛𝐚𝐨
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=tb(?:\+|%20)+([^&]+)(?:&.*)?$ https://s.taobao.com/search?q=$1 302
 # 𝐓𝐢𝐚𝐧𝐦𝐚𝐨
