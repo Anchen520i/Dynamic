@@ -4,7 +4,8 @@
 
 [URL Rewrite]
 # 𝐆𝐨𝐨𝐠𝐥𝐞
-^https?://(?:www\.)?(?:g|google)\.cn(.*)$ https://www.google.com$1 302
+#^https?://(?:www\.)?(?:g|google)\.cn(.*)$ https://www.google.com$1 302
+^https?://(?:[^/]+\.)?(?:g|google)\.cn(.*)$ https://www.google.com$1 302
 # 𝐆𝐢𝐭𝐇𝐮𝐛
 ^https?://hisuio/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/Rule/$1.list 302
 ^https?://acher/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/icon/$1.png 302
@@ -25,4 +26,5 @@
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=jd(?:\+|%20)+([^&]+)(?:&.*)?$ https://search.jd.com/Search?keyword=$1&enc=utf-8 302
 
 [MITM]
-hostname = %APPEND% *.google.com, *.google.cn
+#hostname = %APPEND% *.google.com, *.google.cn
+hostname = %APPEND% google.cn, *.google.cn, g.cn, *.g.cn
