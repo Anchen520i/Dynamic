@@ -8,7 +8,7 @@
 # 𝐆𝐢𝐭𝐇𝐮𝐛
 ^https?://hisuio/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/Rule/$1.list 302
 ^https?://acher/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/icon/$1.png 302
-^https?://dns/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/Rule/$1.txt 302
+^https?://dns/China https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/Rule/China.txt 302
 # 𝐆𝐢𝐭𝐇𝐮𝐛 𝐔𝐬𝐞𝐫𝐬
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=gh(?:\+|%20)+([^&]+)(?:&.*)?$ https://github.com/search?q=$1&type=users 302
 # 𝐁𝐢𝐧𝐠
