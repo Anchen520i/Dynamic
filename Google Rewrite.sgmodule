@@ -10,6 +10,8 @@
 ^https?://acher/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/icon/$1.png 302
 # 𝐑𝐨𝐮𝐭𝐞𝐫
 ^https?://www\.google\.[^/]+/search\?.*?q=r(?:&.*)?$ http://router.com/ 302
+# 91
+^https?://www\.google\.[^/]+/search\?.*?q=91(?:&.*)?$ https://91porn.com/index.php 302
 # 𝐆𝐈𝐒
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=gis(?:&.*)?$ https://anchen520i.github.io/gis-navigation/ 302
 # 𝐆𝐢𝐭𝐇𝐮𝐛 𝐔𝐬𝐞𝐫𝐬
