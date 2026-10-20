@@ -24,5 +24,8 @@
 # 𝐉𝐢𝐧𝐠𝐝𝐨𝐧𝐠
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=jd(?:\+|%20)+([^&]+)(?:&.*)?$ https://search.jd.com/Search?keyword=$1&enc=utf-8 302
 
+# 𝐑𝐨𝐮𝐭𝐞𝐫
+^https?://www\.google\.[^/]+/search\?.*?q=r(?:&.*)?$ https://router.com/ 302
+
 [MITM]
 hostname = %APPEND% *.google.com, *.google.cn
