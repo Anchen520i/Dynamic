@@ -11,7 +11,7 @@
 # 𝐑𝐨𝐮𝐭𝐞𝐫
 ^https?://www\.google\.[^/]+/search\?.*?q=r(?:&.*)?$ http://router.com/ 302
 # 𝐆𝐈𝐒
-(?i)^https?://www\.google\.[^/]+/search\?.*?q=gis(?:&.*)?$ https://Anchen520i.github.io/gis-navigation/ 302
+(?i)^https?://www\.google\.[^/]+/search\?.*?q=gis(?:&.*)?$ https://anchen520i.github.io/gis-navigation/302
 # 𝐆𝐢𝐭𝐇𝐮𝐛 𝐔𝐬𝐞𝐫𝐬
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=gh(?:\+|%20)+([^&]+)(?:&.*)?$ https://github.com/search?q=$1&type=users 302
 # 𝐁𝐢𝐧𝐠
