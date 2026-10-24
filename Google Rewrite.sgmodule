@@ -29,8 +29,5 @@
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=tm(?:\+|%20)+([^&]+)(?:&.*)?$ https://list.tmall.com/search_product.htm?q=$1 302
 # 𝐉𝐢𝐧𝐠𝐝𝐨𝐧𝐠
 (?i)^https?://www\.google\.[^/]+/search\?.*?q=jd(?:\+|%20)+([^&]+)(?:&.*)?$ https://search.jd.com/Search?keyword=$1&enc=utf-8 302
-# 𝐓𝐞𝐬𝐭
-http://test/internet http://connectivitycheck.platform.hicloud.com/generate_204 302
-http://test/proxy http://cp.cloudflare.com/generate_204 302
 [MITM]
 hostname = %APPEND% *.google.com, *.google.cn
