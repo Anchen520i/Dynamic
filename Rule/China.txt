@@ -1,3 +1,16 @@
+# NAME: ChinaMax
+# AUTHOR: blackmatrix7
+# REPO: https://gitlab.com/blackmatrix7/ios_rule_script
+# UPDATED: 2026-10-24 04:58:44
+# DOMAIN: 270
+# DOMAIN-KEYWORD: 13
+# DOMAIN-SUFFIX: 110478
+# IP-ASN: 1
+# IP-CIDR: 8245
+# IP-CIDR6: 4312
+# PROCESS-NAME: 12
+# USER-AGENT: 65
+# TOTAL: 123396
 DOMAIN,cpro.baidustatic.com
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
