@@ -1,0 +1,32 @@
+#!name=HiSuio
+#!desc=General与Host配置
+#!category=Acher
+
+[General]
+# 𝐃𝐍𝐒
+hijack-dns = *:53
+exclude-simple-hostnames = true
+use-local-host-item-for-proxy = true
+always-real-ip = *.lan, *.local
+dns-server = 223.5.5.5, 119.29.29.29
+encrypted-dns-server = https://iqsjp.com:44443/dns-query/3f7899a9-a484-4995-870a-4f2fc2e0e329, https://destitute2725.com:44443/dns-query/3f7899a9-a484-4995-870a-4f2fc2e0e329, https://prolonged3729.com:443/dns-query/3f7899a9-a484-4995-870a-4f2fc2e0e329
+
+# 𝐍𝐞𝐭𝐰𝐨𝐫𝐤
+tun-excluded-routes = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.168.0.0/16, 224.0.0.0/4, 255.255.255.255/32, ::1/128, fc00::/7, fe80::/10, ff00::/8
+skip-proxy = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.168.0.0/16, 224.0.0.0/4, 255.255.255.255/32, ::1/128, fc00::/7, fe80::/10, ff00::/8, *.lan, *.local, localhost, captive.apple.com
+
+# 𝐓𝐞𝐬𝐭
+internet-test-url = http://connectivitycheck.platform.hicloud.com/generate_204
+proxy-test-url = http://cp.cloudflare.com/generate_204
+
+# 𝐆𝐄𝐎𝐈𝐏
+geoip-maxmind-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
+
+[Host]
+# 𝐒𝐞𝐫𝐯𝐞𝐫
+*.lan = server:system
+RULE-SET:http://dns/China = server:223.5.5.5
+
+# 𝐀𝐦𝐲
+f65c97a8-c9b7-4ec5-81bd-2a85a43d980d.twmrgf26k8.sbs = cfafd49a-cc82-4308-9e0f-3aba575be8b3.twmrgf26k8.sbs
+e2aa8152-2efa-4126-a4d4-1748e71d2fba.t77xo98m4u.sbs = f8659fce-a0cf-484c-a4b8-56dd2b78f9df.t77xo98m4u.sbs
