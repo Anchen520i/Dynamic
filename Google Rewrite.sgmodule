@@ -7,7 +7,7 @@
 ^https?://(?:www\.)?(?:g|google)\.cn(.*)$ https://www.google.com$1 302
 # 𝐆𝐢𝐭𝐇𝐮𝐛
 ^https?://hisuio/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/Rule/$1.list 302
-^https?://acher/(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/icon/$1.png 302
+^https?://(.*)$ https://github.com/Anchen520i/Dynamic/raw/Surge/icon/$1.png 302
 ^https?://dns/China https://raw.githubusercontent.com/Anchen520i/Dynamic/refs/heads/Surge/Rule/China.list 302
 # 𝐑𝐨𝐮𝐭𝐞𝐫
 ^https?://www\.google\.[^/]+/search\?.*?q=r(?:&.*)?$ http://router.com/ 302
