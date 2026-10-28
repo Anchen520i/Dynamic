@@ -1,6 +1,7 @@
 #!name=Google Rewrite
 #!author=Acher
 #!desc = 谷歌搜索重定向
+#!category=Acher
 
 [URL Rewrite]
 # 𝐆𝐨𝐨𝐠𝐥𝐞
