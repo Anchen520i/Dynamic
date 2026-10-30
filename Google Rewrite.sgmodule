@@ -9,7 +9,6 @@
 # 𝐆𝐢𝐭𝐇𝐮𝐛
 ^https?://hisuio/(.*)$ https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/Rule/$1.list 302
 ^https?://acher/(.*)$ https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/$1.png 302
-^https?://dns/China https://raw.githubusercontent.com/Anchen520i/Dynamic/refs/heads/Surge/Rule/China.list 302
 # 𝐑𝐨𝐮𝐭𝐞𝐫
 (?i)^https?://www\.google\.[^/]+/search\?(?:[^&]*&)*q=r(?:&.*)?$ http://router.com/ 302
 # 𝐏𝐨𝐫𝐧
