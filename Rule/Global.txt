@@ -22965,6 +22965,7 @@
 .opdems.ac.uk
 .open.ac.uk
 .open.com.hk
+.openai.com
 .openai.org
 .openallweb.com
 .openamt.com
