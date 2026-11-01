@@ -9,11 +9,9 @@ DOMAIN,antigravity-pa.googleapis.com
 DOMAIN,antigravity.googleapis.com
 DOMAIN,api.cloudflare.com
 DOMAIN,api.github.com
-DOMAIN,api.msn.com
 DOMAIN,appsgenaiserver-pa.clients.google.com
 DOMAIN,appsgenaiserver-pa.clients6.google.com
 DOMAIN,appsgenaiserver-pa.googleapis.com
-DOMAIN,assets.msn.com
 DOMAIN,aws-language-servers.us-east-1.amazonaws.com
 DOMAIN,aws-toolkit-language-servers.amazonaws.com
 DOMAIN,browser-intake-datadoghq.com
@@ -223,7 +221,6 @@ DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,lcicat.org
 DOMAIN-SUFFIX,lcicollections.org
 DOMAIN-SUFFIX,leonardo.ai
-DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,liveperson.net
 DOMAIN-SUFFIX,llama.com
 DOMAIN-SUFFIX,llamameta.net
@@ -237,13 +234,10 @@ DOMAIN-SUFFIX,magnific.com
 DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,manuscdn.com
-DOMAIN-SUFFIX,mcbaas.work
-DOMAIN-SUFFIX,mcdemo.show
 DOMAIN-SUFFIX,mcpservertest.online
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,metaaiusercontent.com
 DOMAIN-SUFFIX,metaaivm.com
-DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,mistral.ai
 DOMAIN-SUFFIX,modelcontextprotocol.com
@@ -251,7 +245,6 @@ DOMAIN-SUFFIX,modelcontextprotocol.io
 DOMAIN-SUFFIX,modelcontextprotocol.net
 DOMAIN-SUFFIX,modelcontextprotocol.org
 DOMAIN-SUFFIX,mozilla.ai
-DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,muse.ai
 DOMAIN-SUFFIX,muthos.com
 DOMAIN-SUFFIX,notebook.google
@@ -307,7 +300,6 @@ DOMAIN-SUFFIX,runway.com
 DOMAIN-SUFFIX,runwayml.com
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,sider.ai
 DOMAIN-SUFFIX,sillylittleguy.org
 DOMAIN-SUFFIX,sora.com
@@ -325,7 +317,6 @@ DOMAIN-SUFFIX,syntx.ai
 DOMAIN-SUFFIX,tabnine.com
 DOMAIN-SUFFIX,talkai.info
 DOMAIN-SUFFIX,tapnow.ai
-DOMAIN-SUFFIX,tcwqqdy.guru
 DOMAIN-SUFFIX,themeforest.net
 DOMAIN-SUFFIX,together.ai
 DOMAIN-SUFFIX,together.xyz
