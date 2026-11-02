@@ -1,8 +1,8 @@
 <div align="center">
 
-# 𝐌𝐚𝐜𝐬𝐞𝐥𝐟 𝐏𝐫𝐨
+# Surge Pro
 
-**面向 macOS 的 Surge 个性化分流配置**
+**面向Surge用户的个性化分流配置**
 
 按应用选择出口 · 按地区智能选路 · 加密 DNS · 局域网兼容
 
