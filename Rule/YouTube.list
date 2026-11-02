@@ -1,9 +1,4 @@
-DOMAIN,fonts.googleapis.com
-DOMAIN,music.youtube.com
-DOMAIN,youtubei.googleapis.com
-DOMAIN,yt3.ggpht.com
 DOMAIN,yt3.googleusercontent.com
-DOMAIN-SUFFIX,ads.youtube.com
 DOMAIN-SUFFIX,fonts.googleapis.com
 DOMAIN-SUFFIX,ggpht.cn
 DOMAIN-SUFFIX,ggpht.com
@@ -183,9 +178,7 @@ DOMAIN-SUFFIX,youtubei.googleapis.com
 DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,youtubemobilesupport.com
 DOMAIN-SUFFIX,yt.be
-DOMAIN-SUFFIX,yt3.ggpht.com
 DOMAIN-SUFFIX,ytimg.com
-DOMAIN-KEYWORD,youtube
 USER-AGENT,*youtube*
 USER-AGENT,YouTube*
 IP-CIDR,172.110.32.0/21,no-resolve
