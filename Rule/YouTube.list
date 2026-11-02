@@ -1,8 +1,10 @@
+DOMAIN,fonts.googleapis.com
 DOMAIN,music.youtube.com
 DOMAIN,youtubei.googleapis.com
 DOMAIN,yt3.ggpht.com
 DOMAIN,yt3.googleusercontent.com
 DOMAIN-SUFFIX,ads.youtube.com
+DOMAIN-SUFFIX,fonts.googleapis.com
 DOMAIN-SUFFIX,ggpht.cn
 DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,googlevideo.com
