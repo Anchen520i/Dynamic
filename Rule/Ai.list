@@ -2,7 +2,6 @@ DOMAIN,ai.developer.meta.com
 DOMAIN,ai.meta.com
 DOMAIN,aidemos.meta.com
 DOMAIN,alkalicore-pa.clients6.google.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,anthropic-com.ghost.io
 DOMAIN,anthropic.com.cdn.cloudflare.net
 DOMAIN,antigravity-pa.googleapis.com
@@ -14,8 +13,6 @@ DOMAIN,appsgenaiserver-pa.clients6.google.com
 DOMAIN,appsgenaiserver-pa.googleapis.com
 DOMAIN,aws-language-servers.us-east-1.amazonaws.com
 DOMAIN,aws-toolkit-language-servers.amazonaws.com
-DOMAIN,browser-intake-datadoghq.com
-DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN,cdn.growthbook.io
 DOMAIN,cdn.usefathom.com
 DOMAIN,client-telemetry.us-east-1.amazonaws.com
@@ -39,21 +36,13 @@ DOMAIN,in.appcenter.ms
 DOMAIN,llama.developer.meta.com
 DOMAIN,notebooklm-pa.googleapis.com
 DOMAIN,notebooklm.googleapis.com
-DOMAIN,o33249.ingest.us.sentry.io
-DOMAIN,openai-api.arkoselabs.com
-DOMAIN,openai.qualtrics.com
-DOMAIN,openaiassets.blob.core.windows.net
-DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
 DOMAIN,pplx-res.cloudinary.com
-DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,q-developer-integration.us-east-1.api.aws
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,static.cloudflareinsights.com
 DOMAIN,storage.googleapis.com
 DOMAIN,sydney.bing.com
-DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
 DOMAIN-SUFFIX,agentclientprotocol.com
 DOMAIN-SUFFIX,ai.cloudflare.com
 DOMAIN-SUFFIX,ai.com
@@ -95,9 +84,6 @@ DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,character.ai
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatbotclaude.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,chatgpt.livekit.cloud
-DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,chutes.ai
 DOMAIN-SUFFIX,civitai.com
 DOMAIN-SUFFIX,clau.de
@@ -162,7 +148,6 @@ DOMAIN-SUFFIX,elevenlabs.io
 DOMAIN-SUFFIX,envato-static.com
 DOMAIN-SUFFIX,envato.com
 DOMAIN-SUFFIX,envatousercontent.com
-DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,factory.ai
 DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,firefly.adobe.com
@@ -172,13 +157,10 @@ DOMAIN-SUFFIX,flow.google
 DOMAIN-SUFFIX,flow.google.com
 DOMAIN-SUFFIX,g.ai
 DOMAIN-SUFFIX,gamma.app
-DOMAIN-SUFFIX,gateway.ai.cloudflare.com
 DOMAIN-SUFFIX,geller-pa.googleapis.com
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,gemini.gstatic.com
 DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,genspark.ai
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,grammarly.com
@@ -194,7 +176,6 @@ DOMAIN-SUFFIX,gvt2.com
 DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,h2o.ai
 DOMAIN-SUFFIX,hcaptcha.com
-DOMAIN-SUFFIX,hermes-agent.nousresearch.com
 DOMAIN-SUFFIX,heygen.com
 DOMAIN-SUFFIX,hf.co
 DOMAIN-SUFFIX,hf.space
@@ -262,11 +243,6 @@ DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,ollama.com
 DOMAIN-SUFFIX,opal.google
 DOMAIN-SUFFIX,opal.google.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
-DOMAIN-SUFFIX,openai.org
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,openart.ai
 DOMAIN-SUFFIX,openclaw.ai
 DOMAIN-SUFFIX,opencode.ai
@@ -299,7 +275,6 @@ DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
 DOMAIN-SUFFIX,runway.com
 DOMAIN-SUFFIX,runwayml.com
 DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,sider.ai
 DOMAIN-SUFFIX,sillylittleguy.org
 DOMAIN-SUFFIX,sora.com
@@ -336,7 +311,6 @@ DOMAIN-SUFFIX,youmind.site
 DOMAIN-SUFFIX,zed.dev
 DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
 DOMAIN-KEYWORD,chatgpt
-DOMAIN-KEYWORD,chatgpt-async-webps-prod
 DOMAIN-KEYWORD,codex
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,datadog

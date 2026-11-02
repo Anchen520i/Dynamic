@@ -1,7 +1,6 @@
 DOMAIN,anthropic-com.ghost.io
 DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic.com.cdn.cloudflare.net
-DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN,cdn.growthbook.io
 DOMAIN,cdn.usefathom.com
 DOMAIN,servd-anthropic-website.b-cdn.net
@@ -36,7 +35,6 @@ DOMAIN-SUFFIX,modelcontextprotocol.io
 DOMAIN-SUFFIX,modelcontextprotocol.net
 DOMAIN-SUFFIX,modelcontextprotocol.org
 DOMAIN-SUFFIX,muthos.com
-DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,sillylittleguy.org
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-KEYWORD,datadog

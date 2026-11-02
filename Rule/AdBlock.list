@@ -160089,7 +160089,6 @@ URL-REGEX,^https?:\/\/.+?\.beacon\.qq\.com
 URL-REGEX,^https?:\/\/.+?\.l\.qq\.com
 URL-REGEX,^https?:\/\/\w+\.gdt\.qq\.com
 URL-REGEX,^https?:\/\/ad\d\.sina\.com
-URL-REGEX,^https?:\/\/ad\d\.sina\.com.cn
 URL-REGEX,^https?:\/\/app\.58\.com\/api\/log\/
 URL-REGEX,^https?:\/\/d\d.sinaimg.cn
 URL-REGEX,^https?:\/\/sa\d\.tuisong\.baidu\.com
