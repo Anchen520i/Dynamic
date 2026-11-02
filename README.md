@@ -6,7 +6,7 @@
 
 按应用选择出口 · 按地区智能选路 · 加密 DNS · 局域网兼容
 
-![Platform](https://img.shields.io/badge/Platform-macOS-&-iOS-111827?style=flat-square&logo=apple&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-macOS&iOS-111827?style=flat-square&logo=apple&logoColor=white)
 ![Engine](https://img.shields.io/badge/Engine-Surge-2563EB?style=flat-square)
 ![Routing](https://img.shields.io/badge/Routing-Rule%20Based-059669?style=flat-square)
 ![DNS](https://img.shields.io/badge/DNS-DoH-7C3AED?style=flat-square)
