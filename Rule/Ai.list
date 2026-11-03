@@ -359,12 +359,12 @@ DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,sentry
 DOMAIN-KEYWORD,sift
 URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
-IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR,160.79.104.0/23,no-resolve
 IP-CIDR,199.47.142.0/23,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-CIDR6,2604:f20::/32,no-resolve
-IP-CIDR6,2607:6bc0::/32,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve
 IP-ASN,399358,no-resolve
 IP-ASN,401518,no-resolve
 PROCESS-NAME,Antigravity
