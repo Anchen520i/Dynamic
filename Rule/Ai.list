@@ -46,6 +46,7 @@ DOMAIN-SUFFIX,antigravity.google.com
 DOMAIN-SUFFIX,antspace.dev
 DOMAIN-SUFFIX,api.microsoftapp.net
 DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
 DOMAIN-SUFFIX,challenges.cloudflare.com
@@ -67,6 +68,7 @@ DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,claudepages.dev
 DOMAIN-SUFFIX,claudestudio.com
 DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
 DOMAIN-SUFFIX,copilot-stg.com
 DOMAIN-SUFFIX,copilot.cloud.microsoft
@@ -76,6 +78,8 @@ DOMAIN-SUFFIX,crixet.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,edgeservices.bing.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,flow.google
 DOMAIN-SUFFIX,flow.google.com
 DOMAIN-SUFFIX,g.ai
@@ -87,11 +91,16 @@ DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,jules.google
 DOMAIN-SUFFIX,jules.google.com
 DOMAIN-SUFFIX,labs.google
 DOMAIN-SUFFIX,labs.google.com
 DOMAIN-SUFFIX,labstailwind.pa.googleapis.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,llama.com
 DOMAIN-SUFFIX,llamameta.net
 DOMAIN-SUFFIX,makersuite.google.com
@@ -108,6 +117,7 @@ DOMAIN-SUFFIX,notebooklm.google.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaistatsig.com
 DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,opal.google
 DOMAIN-SUFFIX,opal.google.com
 DOMAIN-SUFFIX,openai.com
@@ -117,8 +127,12 @@ DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,stitch.withgoogle.com
+DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-KEYWORD,chatgpt-async-webps-prod
 URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
