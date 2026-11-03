@@ -325,8 +325,6 @@ IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-CIDR6,2604:f20::/32,no-resolve
 IP-CIDR6,2607:6bc0::/32,no-resolve
-IP-ASN,14061,no-resolve
-IP-ASN,20473,no-resolve
 IP-ASN,399358,no-resolve
 IP-ASN,401518,no-resolve
 PROCESS-NAME,Antigravity
