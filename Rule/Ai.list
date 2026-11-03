@@ -8,6 +8,7 @@ DOMAIN,anthropic-com.ghost.io
 DOMAIN,anthropic.com.cdn.cloudflare.net
 DOMAIN,antigravity-pa.googleapis.com
 DOMAIN,antigravity.googleapis.com
+DOMAIN,api.cloudflare.com
 DOMAIN,api.github.com
 DOMAIN,api.msn.com
 DOMAIN,appsgenaiserver-pa.clients.google.com
@@ -53,6 +54,7 @@ DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,q-developer-integration.us-east-1.api.aws
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,static.cloudflareinsights.com
+DOMAIN,storage.googleapis.com
 DOMAIN,sydney.bing.com
 DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
 DOMAIN,token-plan-sgp.xiaomimimo.com
@@ -67,6 +69,7 @@ DOMAIN-SUFFIX,aicode.googleapis.com
 DOMAIN-SUFFIX,aida.googleapis.com
 DOMAIN-SUFFIX,aisandbox-pa.googleapis.com
 DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,ampcode.com
 DOMAIN-SUFFIX,ampworkers.com
 DOMAIN-SUFFIX,ant.dev
@@ -85,7 +88,10 @@ DOMAIN-SUFFIX,arena.ai
 DOMAIN-SUFFIX,artificialanalysis.ai
 DOMAIN-SUFFIX,atmeta.com
 DOMAIN-SUFFIX,augmentcode.com
+DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,aws.dev
+DOMAIN-SUFFIX,awsapps.com
+DOMAIN-SUFFIX,awsstatic.com
 DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,bfl.ai
 DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
@@ -93,6 +99,7 @@ DOMAIN-SUFFIX,bolt.new
 DOMAIN-SUFFIX,bytegate-sg.byteintlapi.com
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,cerebras.ai
+DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,character.ai
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatbotclaude.com
@@ -182,6 +189,7 @@ DOMAIN-SUFFIX,gateway.ai.cloudflare.com
 DOMAIN-SUFFIX,geller-pa.googleapis.com
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,gemini.gstatic.com
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,genspark.ai
@@ -193,7 +201,12 @@ DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,grok.x.com
 DOMAIN-SUFFIX,grokipedia.com
 DOMAIN-SUFFIX,groq.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,h2o.ai
+DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,hermes-agent.nousresearch.com
 DOMAIN-SUFFIX,heygen.com
 DOMAIN-SUFFIX,hf.co
@@ -218,6 +231,7 @@ DOMAIN-SUFFIX,labs.google
 DOMAIN-SUFFIX,labs.google.com
 DOMAIN-SUFFIX,labstailwind.pa.googleapis.com
 DOMAIN-SUFFIX,langchain.com
+DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,lcicat.org
 DOMAIN-SUFFIX,lcicollections.org
 DOMAIN-SUFFIX,leonardo.ai
@@ -295,6 +309,7 @@ DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,q.eu-central-1.amazonaws.com
 DOMAIN-SUFFIX,q.us-east-1.amazonaws.com
 DOMAIN-SUFFIX,qoder.com
+DOMAIN-SUFFIX,recaptcha.net
 DOMAIN-SUFFIX,recraft.ai
 DOMAIN-SUFFIX,repl.co
 DOMAIN-SUFFIX,repl.it
@@ -306,6 +321,7 @@ DOMAIN-SUFFIX,replit.dev
 DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
 DOMAIN-SUFFIX,runway.com
 DOMAIN-SUFFIX,runwayml.com
+DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,sf16-short-sg.bytedapm.com
 DOMAIN-SUFFIX,sfx.ms
@@ -315,11 +331,13 @@ DOMAIN-SUFFIX,sillylittleguy.org
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,sourcegraph.com
 DOMAIN-SUFFIX,spicywriter.com
+DOMAIN-SUFFIX,sso.amazonaws.com
 DOMAIN-SUFFIX,stability.ai
 DOMAIN-SUFFIX,starling.zijieapi.com
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,stepfun.ai
 DOMAIN-SUFFIX,stitch.withgoogle.com
+DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,suno.ai
 DOMAIN-SUFFIX,suno.com
 DOMAIN-SUFFIX,synthesia.io
@@ -359,12 +377,14 @@ DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,sentry
 DOMAIN-KEYWORD,sift
 URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
-IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR,160.79.104.0/21,no-resolve
 IP-CIDR,199.47.142.0/23,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-CIDR6,2604:f20::/32,no-resolve
-IP-CIDR6,2607:6bc0::/48,no-resolve
+IP-CIDR6,2607:6bc0::/32,no-resolve
+IP-ASN,14061,no-resolve
+IP-ASN,20473,no-resolve
 IP-ASN,399358,no-resolve
 IP-ASN,401518,no-resolve
 PROCESS-NAME,Antigravity
