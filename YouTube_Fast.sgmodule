@@ -9,11 +9,11 @@ DOMAIN,init-stream.maasea.workers.dev,YouTube
 
 [Script]
 # 保留全部原 API 去广告入口和二进制处理；使用明确的合法参数，保持原默认功能，不开启字幕翻译。
-youtube.fast.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch|log_event|config))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,script-path=youtube.fast.response.js,argument="{"captionLang":"off","blockUpload":true,"blockImmersive":true,"blockShorts":false}"
+youtube.fast.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch|log_event|config))(\?(.*))?$,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Anchen520i/Dynamic/refs/heads/Surge/Script/YouTube/youtube.fast.response.js,argument="{"captionLang":"off","blockUpload":true,"blockImmersive":true,"blockShorts":false}"
 # 保留 initplayback 的密钥匹配和 UMP 去广告处理，不强制关闭客户端协议，不把缺失广告当作成功。
-youtube.fast.request.init = type=http-request,pattern=^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&ack.*,requires-body=1,max-size=-1,binary-body-mode=1,script-path=youtube.fast.request.js,argument="{"captionLang":"off"}"
+youtube.fast.request.init = type=http-request,pattern=^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&ack.*,requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/Anchen520i/Dynamic/refs/heads/Surge/Script/YouTube/youtube.fast.request.js,argument="{"captionLang":"off"}"
 # 该处理仅需请求头，取消等待请求体；搭配本地脚本保留 content-encoding，不能直接换回原 request.js。
-youtube.fast.request.log_event = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/log_event,requires-body=0,script-path=youtube.fast.request.js
+youtube.fast.request.log_event = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/log_event,requires-body=0,script-path=https://raw.githubusercontent.com/Anchen520i/Dynamic/refs/heads/Surge/Script/YouTube/youtube.fast.request.js
 
 [MITM]
 # initplayback 仍需解密；未验证移除 googlevideo 解密后 UMP 去广告仍有效，因此保留原范围。
