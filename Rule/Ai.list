@@ -146,11 +146,6 @@ DOMAIN-SUFFIX,copilot.cloud.microsoft
 DOMAIN-SUFFIX,copilot.com
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,coze.com
-DOMAIN-SUFFIX,cozeapp.net
-DOMAIN-SUFFIX,cozebuild.com
-DOMAIN-SUFFIX,cozecdn.com
-DOMAIN-SUFFIX,cozedeploy.com
-DOMAIN-SUFFIX,cozesdk.com
 DOMAIN-SUFFIX,crewai.com
 DOMAIN-SUFFIX,crixet.com
 DOMAIN-SUFFIX,cursor-cdn.com
@@ -169,7 +164,6 @@ DOMAIN-SUFFIX,diabrowser.com
 DOMAIN-SUFFIX,diabrowser.engineering
 DOMAIN-SUFFIX,dify.ai
 DOMAIN-SUFFIX,dola.com
-DOMAIN-SUFFIX,doudou.com
 DOMAIN-SUFFIX,dreamgen.com
 DOMAIN-SUFFIX,duck.ai
 DOMAIN-SUFFIX,edgeservices.bing.com
@@ -229,6 +223,7 @@ DOMAIN-SUFFIX,jules.google
 DOMAIN-SUFFIX,jules.google.com
 DOMAIN-SUFFIX,kilo.ai
 DOMAIN-SUFFIX,kilo.codes
+DOMAIN-SUFFIX,kimi.ai
 DOMAIN-SUFFIX,kiro.dev
 DOMAIN-SUFFIX,labs.google
 DOMAIN-SUFFIX,labs.google.com
@@ -238,7 +233,6 @@ DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,lcicat.org
 DOMAIN-SUFFIX,lcicollections.org
 DOMAIN-SUFFIX,leonardo.ai
-DOMAIN-SUFFIX,lf3-static.bytednsdoc.com
 DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,liveperson.net
 DOMAIN-SUFFIX,llama.com
@@ -254,15 +248,11 @@ DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,manuscdn.com
 DOMAIN-SUFFIX,marscode.com
-DOMAIN-SUFFIX,mcbaas.work
-DOMAIN-SUFFIX,mcdemo.show
 DOMAIN-SUFFIX,mchost.guru
-DOMAIN-SUFFIX,mcprev.cn
 DOMAIN-SUFFIX,mcpservertest.online
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,metaaiusercontent.com
 DOMAIN-SUFFIX,metaaivm.com
-DOMAIN-SUFFIX,miaibox.com
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,minimax.io
@@ -271,7 +261,7 @@ DOMAIN-SUFFIX,modelcontextprotocol.com
 DOMAIN-SUFFIX,modelcontextprotocol.io
 DOMAIN-SUFFIX,modelcontextprotocol.net
 DOMAIN-SUFFIX,modelcontextprotocol.org
-DOMAIN-SUFFIX,modelscope.com
+DOMAIN-SUFFIX,moonshot.ai
 DOMAIN-SUFFIX,mozilla.ai
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,muse.ai
@@ -311,12 +301,13 @@ DOMAIN-SUFFIX,pika.art
 DOMAIN-SUFFIX,plannotator.ai
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,poecdn.net
-DOMAIN-SUFFIX,ppio.com
 DOMAIN-SUFFIX,pplx.ai
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,q.eu-central-1.amazonaws.com
 DOMAIN-SUFFIX,q.us-east-1.amazonaws.com
 DOMAIN-SUFFIX,qoder.com
+DOMAIN-SUFFIX,qwen.ai
+DOMAIN-SUFFIX,qwenlm.ai
 DOMAIN-SUFFIX,recaptcha.net
 DOMAIN-SUFFIX,recraft.ai
 DOMAIN-SUFFIX,repl.co
@@ -343,6 +334,7 @@ DOMAIN-SUFFIX,sso.amazonaws.com
 DOMAIN-SUFFIX,stability.ai
 DOMAIN-SUFFIX,starling.zijieapi.com
 DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,stepfun.ai
 DOMAIN-SUFFIX,stitch.withgoogle.com
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,suno.ai
@@ -352,13 +344,11 @@ DOMAIN-SUFFIX,syntx.ai
 DOMAIN-SUFFIX,tabnine.com
 DOMAIN-SUFFIX,talkai.info
 DOMAIN-SUFFIX,tapnow.ai
-DOMAIN-SUFFIX,tcwqqdy.guru
 DOMAIN-SUFFIX,themeforest.net
 DOMAIN-SUFFIX,together.ai
 DOMAIN-SUFFIX,together.xyz
 DOMAIN-SUFFIX,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,trae.ai
-DOMAIN-SUFFIX,trae.guru
 DOMAIN-SUFFIX,tripo3d.ai
 DOMAIN-SUFFIX,tron-sg.bytelemon.com
 DOMAIN-SUFFIX,turn.livekit.cloud
@@ -373,6 +363,7 @@ DOMAIN-SUFFIX,you.com
 DOMAIN-SUFFIX,youmind.ai
 DOMAIN-SUFFIX,youmind.com
 DOMAIN-SUFFIX,youmind.site
+DOMAIN-SUFFIX,z.ai
 DOMAIN-SUFFIX,zed.dev
 DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
 DOMAIN-KEYWORD,chatgpt
