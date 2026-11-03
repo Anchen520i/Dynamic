@@ -1,14 +1,11 @@
-DOMAIN,yt3.googleusercontent.com
 DOMAIN-SUFFIX,ggpht.cn
 DOMAIN-SUFFIX,ggpht.com
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt2.com
-DOMAIN-SUFFIX,video.google.com
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
+DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,youtube
 USER-AGENT,*youtube*
 USER-AGENT,YouTube*
