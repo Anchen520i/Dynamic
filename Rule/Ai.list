@@ -90,6 +90,9 @@ DOMAIN-SUFFIX,gemini.gstatic.com
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grok.x.com
+DOMAIN-SUFFIX,grokipedia.com
 DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,intercom.io
@@ -134,6 +137,7 @@ DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,stitch.withgoogle.com
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-SUFFIX,x.ai
 DOMAIN-KEYWORD,chatgpt-async-webps-prod
 URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
 IP-CIDR,160.79.104.0/21,no-resolve
