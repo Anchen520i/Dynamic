@@ -1,6 +1,7 @@
 #!name=YouTube for Safari
 #!desc=Safari YouTube 2.0.0：播放请求参数规避视频广告，并清理独立展示广告卡片；不改写播放器广告字段、不阻断媒体、不自动点击跳过。网站参数未公开，失效时关闭此模块。
 #!system=mac
+#!category=Acher
 
 [Script]
 youtube.safari.page = type=http-request,pattern=^https://www\.youtube\.com/watch(?:\?|$),script-path=https://raw.githubusercontent.com/Anchen520i/Dynamic/refs/heads/Surge/Script/YouTube/YouTube-for-Safari.js,timeout=5
