@@ -7,7 +7,6 @@ DOMAIN,cn.download.nvidia.com
 DOMAIN,config.ubnt.com
 DOMAIN,ctdsb.clouddiffuse.xyz
 DOMAIN,dl.ubnt.com
-DOMAIN,dongman.to
 DOMAIN,end-api.shallow.ink
 DOMAIN,end.shallow.ink
 DOMAIN,gstore.val.manlaxy.com
@@ -18,7 +17,6 @@ DOMAIN,kms.03k.org
 DOMAIN,media.cdn.queniuqe.com
 DOMAIN,ocsp.globalsign.com
 DOMAIN,ocsp2.globalsign.com
-DOMAIN,oneghg.com
 DOMAIN,status.alibabacloud.com
 DOMAIN,steamcommunity-a.akamaihd.net
 DOMAIN,time.izatcloud.net
@@ -1846,6 +1844,7 @@ DOMAIN-SUFFIX,dongdianqiu.com
 DOMAIN-SUFFIX,dongguantoday.com
 DOMAIN-SUFFIX,dongjiao.cc
 DOMAIN-SUFFIX,dongjiaoapp.com
+DOMAIN-SUFFIX,dongman.to
 DOMAIN-SUFFIX,dongqiudi.com
 DOMAIN-SUFFIX,dongting.com
 DOMAIN-SUFFIX,dopa.com
@@ -4086,6 +4085,7 @@ DOMAIN-SUFFIX,omini-shield.com
 DOMAIN-SUFFIX,oncdp.com
 DOMAIN-SUFFIX,oneapm.com
 DOMAIN-SUFFIX,onedns.net
+DOMAIN-SUFFIX,oneghg.com
 DOMAIN-SUFFIX,onegreen.net
 DOMAIN-SUFFIX,onenote.com
 DOMAIN-SUFFIX,onenote.net
