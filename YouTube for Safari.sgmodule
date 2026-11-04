@@ -1,4 +1,5 @@
 #!name=YouTube for Safari
+#!author=Acher
 #!desc=Safari YouTube 2.0.0：播放请求参数规避视频广告，并清理独立展示广告卡片；不改写播放器广告字段、不阻断媒体、不自动点击跳过。网站参数未公开，失效时关闭此模块。
 #!system=mac
 #!category=Acher
