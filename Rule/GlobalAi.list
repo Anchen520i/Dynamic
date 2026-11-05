@@ -101,6 +101,16 @@ DOMAIN-SUFFIX,copilot.com
 DOMAIN-SUFFIX,copilot-stg.com
 DOMAIN,sydney.bing.com
 DOMAIN,titles.prod.mos.microsoft.com
+
+# Microsoft 365 Copilot 补充：2026-11-05 本机抓包确认原 GlobalAi 未覆盖
+# 聊天与会话接口；此主机也承载其他 Microsoft 365 功能
+DOMAIN,substrate.office.com
+# M365 应用入口与许可接口
+DOMAIN,m365.cloud.microsoft
+DOMAIN,licensing.m365.svc.cloud.microsoft
+# 共享身份验证接口：同时影响其他使用此主机登录的微软应用
+DOMAIN,login.microsoftonline.com
+
 DOMAIN,models.inference.ai.azure.com
 DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,gateway.bingviz.microsoftapp.net
