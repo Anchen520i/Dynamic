@@ -90,7 +90,7 @@ DOMAIN-SUFFIX,antigravity.google.com
 DOMAIN-SUFFIX,antigravity-unleash.goog
 AND,((DOMAIN-KEYWORD,antigravity-auto-updater-),(DOMAIN-SUFFIX,run.app))
 
-# Microsoft Copilot / GitHub Copilot - 不包含整个 microsoft.com 或 live.com
+# Microsoft Copilot / GitHub Copilot
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN,copilot-proxy.githubusercontent.com
 DOMAIN,copilot-workspace.githubnext.com
@@ -101,40 +101,15 @@ DOMAIN-SUFFIX,copilot.com
 DOMAIN-SUFFIX,copilot-stg.com
 DOMAIN,sydney.bing.com
 DOMAIN,titles.prod.mos.microsoft.com
-
-# Microsoft 365 Copilot 补充：2026-11-05 本机抓包确认原 GlobalAi 未覆盖
-# 聊天与会话接口；此主机也承载其他 Microsoft 365 功能
 DOMAIN,substrate.office.com
-# M365 应用入口与许可接口
 DOMAIN,m365.cloud.microsoft
 DOMAIN,licensing.m365.svc.cloud.microsoft
-# 共享身份验证接口：同时影响其他使用此主机登录的微软应用
 DOMAIN,login.microsoftonline.com
-
 DOMAIN,models.inference.ai.azure.com
 DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,gateway.bingviz.microsoftapp.net
 
-# Cursor / Windsurf / JetBrains AI / Zed / Kiro / Devin / Cline
-DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,cursor.sh
-DOMAIN,inference.codeium.com
-DOMAIN,server.codeium.com
-DOMAIN,server.self-serve.windsurf.com
-DOMAIN-SUFFIX,jetbrains.ai
-DOMAIN-SUFFIX,grazie.ai
-DOMAIN-SUFFIX,grazie.aws.intellij.net
-DOMAIN,cdn.delta.dev
-DOMAIN,delta.zed.dev
-DOMAIN,api.zed.dev
-DOMAIN,zed-us-east-1-zed-production.c15t.dev
-DOMAIN,cloud.zed.dev
-DOMAIN-SUFFIX,kiro.dev
-DOMAIN-SUFFIX,devin.ai
-DOMAIN-SUFFIX,cline.bot
-DOMAIN-SUFFIX,opencode.ai
-
-# Perplexity / Grok / Meta AI / Poe
+# Perplexity / Grok / Meta
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,perplexity.com
 DOMAIN-SUFFIX,pplx.ai
@@ -151,39 +126,25 @@ DOMAIN,aidemos.meta.com
 DOMAIN,llama.developer.meta.com
 DOMAIN,api.llama.com
 DOMAIN,imagine.meta.com
-DOMAIN-SUFFIX,poe.com
 
-# 其他模型与推理 API
-DOMAIN-SUFFIX,openrouter.ai
-DOMAIN-SUFFIX,mistral.ai
-DOMAIN-SUFFIX,groq.com
-DOMAIN-SUFFIX,together.ai
-DOMAIN-SUFFIX,fireworks.ai
-DOMAIN-SUFFIX,cerebras.ai
-DOMAIN-SUFFIX,voyageai.com
-DOMAIN-SUFFIX,jina.ai
-DOMAIN-SUFFIX,ollama.com
-DOMAIN-SUFFIX,hyperbolic.ai
-DOMAIN,api.hyperbolic.xyz
-DOMAIN,router.huggingface.co
-DOMAIN,integrate.api.nvidia.com
-DOMAIN,ai-gateway.vercel.sh
-DOMAIN,gateway.ai.cloudflare.com
-
-# Mac / Windows 应用进程兜底
-PROCESS-NAME,ChatGPT
-PROCESS-NAME,chatgpt
-PROCESS-NAME,ChatGPT.exe
-PROCESS-NAME,chatgpt.exe
-PROCESS-NAME,Claude
-PROCESS-NAME,claude
-PROCESS-NAME,Claude.exe
-PROCESS-NAME,claude.exe
-PROCESS-NAME,Codex
-PROCESS-NAME,codex
-PROCESS-NAME,Codex.exe
-PROCESS-NAME,codex.exe
+# 兜底
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR,199.47.142.0/23,no-resolve
+IP-CIDR6,2607:6bc0::/32,no-resolve
+IP-ASN,399358,no-resolve
+IP-ASN,401518,no-resolve
 PROCESS-NAME,Antigravity
-PROCESS-NAME,antigravity
 PROCESS-NAME,Antigravity.exe
+PROCESS-NAME,ChatGPT
+PROCESS-NAME,ChatGPT.exe
+PROCESS-NAME,Claude
+PROCESS-NAME,Claude.exe
+PROCESS-NAME,Codex
+PROCESS-NAME,Codex.exe
+PROCESS-NAME,antigravity
+PROCESS-NAME,chatgpt
+PROCESS-NAME,claude
+PROCESS-NAME,claude.exe
+PROCESS-NAME,codex
+PROCESS-NAME,codex.exe
 PROCESS-NAME,cowork-svc.exe
