@@ -7,9 +7,8 @@
 # 𝐆𝐨𝐨𝐠𝐥𝐞
 ^https?://(?:www\.)?(?:g|google)\.cn(.*)$ https://www.google.com$1 302
 # 𝐆𝐢𝐭𝐇𝐮𝐛
-^https?://hisuio/(.*)$ https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/Rule/$1.list 302
-^https?://acher/(.*)$ https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/$1.png 302
-^https?://mystic/(.*)$ https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/icon/$1.PNG 302
+^https?://Sol/(.*)$ https://raw.githubusercontent.com/Vaerios/Nyora/Surge/Rule/$1.list 302
+^https?://Astra/(.*)$ https://raw.githubusercontent.com/Vaerios/Nyora//Surge/icon/$1.png 302
 # 𝐑𝐨𝐮𝐭𝐞𝐫
 (?i)^https?://www\.google\.[^/]+/search\?(?:[^&]*&)*q=r(?:&.*)?$ http://router.com/ 302
 # 𝐏𝐨𝐫𝐧
