@@ -1,11 +1,3 @@
-# AI-Optimized — Surge AI 分流规则集
-# 编制日期：2026-11-05
-# 类型：RULE-SET 内容；每行不含策略名，不含 FINAL。
-# 来源快照（2026-11-05）：
-# https://raw.githubusercontent.com/Anchen520i/Dynamic/Surge/Rule/Ai.list
-# https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list
-# https://raw.githubusercontent.com/Haxhork/DeveloperBeta/refs/heads/main/Surge/Ruleset/AI.list
-
 # OpenAI / ChatGPT
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,chatgpt.livekit.cloud
