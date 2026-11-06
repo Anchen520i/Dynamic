@@ -1,324 +1,127 @@
 <div align="center">
 
-<br>
+<img src="./icon/Mystic.png" width="96" alt="Mystic icon" />
 
-# ✦ MYSTIC
+# M Y S T I C
 
-### Precision in every connection.
+**Intelligent by Design. Precise by Nature.**
 
-**为 Surge 精心构筑的网络策略体系**
+为 Surge iOS 与 macOS 打造的精细化网络策略配置。  
+**应用独立出口 · Smart 智能选路 · 加密 DNS · 可审计的规则体系**
 
-*让连接有序，让选择自由。*
+![Surge](https://img.shields.io/badge/Surge-iOS%20%26%20macOS-111827?style=for-the-badge&logo=apple&logoColor=white)
+![Routing](https://img.shields.io/badge/Routing-Rule%20Based-5b7fff?style=for-the-badge)
+![DNS](https://img.shields.io/badge/DNS-DoH-12bfa7?style=for-the-badge)
+![License](https://img.shields.io/badge/Resources-User%20Configured-8b5cf6?style=for-the-badge)
 
-<br>
-
-[![Surge](https://img.shields.io/badge/POWERED%20BY-SURGE-111827?style=for-the-badge&labelColor=111827&color=4F46E5)](https://nssurge.com/)
-[![iOS](https://img.shields.io/badge/PLATFORM-iOS-111827?style=for-the-badge&logo=apple&logoColor=white)](File/Surge_iOS.conf)
-[![macOS](https://img.shields.io/badge/PLATFORM-macOS-111827?style=for-the-badge&logo=apple&logoColor=white)](File/Surge_MacOS.conf)
-[![GitHub](https://img.shields.io/badge/MAINTAINED%20ON-GitHub-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vaerios/Nyora/tree/Surge)
-
-<br>
-
-**SMART ROUTING** &nbsp;·&nbsp; **ENCRYPTED DNS** &nbsp;·&nbsp; **MODULAR DESIGN** &nbsp;·&nbsp; **MCP READY**
-
-<br>
-
-[探索特性](#-设计理念) &nbsp;·&nbsp; [立即开始](#-快速开始) &nbsp;·&nbsp; [策略架构](#-策略架构) &nbsp;·&nbsp; [资源目录](#-资源导航) &nbsp;·&nbsp; [常见问题](#-常见问题)
-
-<br>
-
----
-
-<sub>✦ 不是简单地让流量通过代理，而是让每一次连接抵达恰当的出口。</sub>
+[配置下载](#配置入口) · [策略架构](#策略架构) · [应用出口](#应用级独立出口) · [分流顺序](#分流优先级) · [使用说明](#快速开始)
 
 </div>
 
-<br>
+> [!IMPORTANT]
+> 本仓库提供配置、规则与脚本资源，不提供代理节点。配置中的 `policy-path=订阅链接`、`http://sol/...` 和 `http://astra/...` 为需自行配置的订阅或自定义资源映射，不应假定可在其他设备直接使用。请先使用本地副本验证。
 
-## ◈ 设计理念
+## 配置入口
 
-**Mystic** 是面向 **Surge iOS 与 Surge macOS** 的个人网络配置与资源集合。以清晰的规则优先级为骨架，以独立的应用策略组为核心，将复杂的网络路径组织成直观、可维护的使用体验。
+| 平台 | 主配置 | 使用说明 |
+|:---:|:---|:---|
+| **iOS** | [Surge_iOS.conf](./File/Surge_iOS.conf) | iPhone / iPad，支持当前配置的 Surge 版本 |
+| **macOS** | [Surge_MacOS.conf](./File/Surge_MacOS.conf) | Mac，包含独立的 HTTP API / MCP 设置 |
 
-<table>
-<tr>
-<td width="50%" valign="top">
+**原始文件地址：** [iOS](https://raw.githubusercontent.com/Vaerios/Nyora/Surge/File/Surge_iOS.conf) · [macOS](https://raw.githubusercontent.com/Vaerios/Nyora/Surge/File/Surge_MacOS.conf)
 
-### ◇ 精细分流
+## 策略架构
 
-按应用与服务识别流量。AI、影音、社交与国内服务各有其策略，不必让所有连接共享同一出口。
+<div align="center">
+  <img src="./assets/routing-architecture.svg" alt="Mystic 智能分流架构" width="100%" />
+</div>
 
-</td>
-<td width="50%" valign="top">
+> 图示反映当前配置的主要策略关系，而不是完整的 Surge 内部执行时序。SVG 使用轻量 CSS 动画；在不支持动画的 GitHub 客户端中仍可作为静态图显示。
 
-### ◇ 智能选路
+Mystic 是节点订阅池；五个地区 `smart` 策略组通过 `include-other-group=Mystic` 引入并按节点名称筛选。`Proxy` 是默认代理策略，业务组既可以跟随 `Proxy`，也可以独立选择地区。
 
-日本、台湾、美国、香港、新加坡五个地区组采用 `smart`，在对应节点集合中自动选择可用策略。
+## 应用级独立出口
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+<div align="center">
+  <img src="./assets/application-policies.svg" alt="Mystic 应用级独立出口" width="100%" />
+</div>
 
-### ◇ 加密解析
+**当前业务策略组：** `Ai`、`Bilibili`、`Disney`、`Netflix`、`Spotify`、`Telegram`、`TikTok`、`Twitter`、`YouTube`。
 
-通过阿里 DNS 的 DNS over QUIC（223.5.5.5 / 223.6.6.6）与 DNSPod 的 DNS over HTTPS（doh.pub）进行解析，并保留本地域名与网络兼容性设置。
+> [!TIP]
+> 示例：`Proxy` 选择香港，`Ai` 选择美国，`YouTube` 选择日本，`Bilibili` 保持 `DIRECT`。这些策略彼此独立，前提是请求实际命中对应规则集。
 
-</td>
-<td valign="top">
+## 分流优先级
 
-### ◇ 模块扩展
+<div align="center">
+  <img src="./assets/rule-priority.svg" alt="Mystic 分流优先级" width="100%" />
+</div>
 
-规则、脚本、模块与图标独立管理；按需启用，避免把所有功能耦合进主配置。
+当前 iOS 主配置从 `DOMAIN,msmp.abchina.com.cn,REJECT` 开始，依次为 Apple 直连、各业务规则集、China 直连、内置 LAN / SYSTEM、`GEOIP,CN,DIRECT`，最后由 `FINAL,Proxy,dns-failed` 兜底。macOS 的首项不同：使用 `RULE-SET,http://sol/Adobe,REJECT`。
 
-</td>
-</tr>
-</table>
+**注意：** `Ai` 与 `Twitter` 的 `grok.com`、`TikTok` 与 `China` 的 `snssdk.com` 等规则存在跨文件覆盖关系；应按实际业务意图判断，不能仅为了去重而删除。
 
-> [!NOTE]
-> Mystic 是 **Surge 配置及相关资源仓库**，不是代理节点服务。具体体验取决于订阅质量、设备系统、网络环境、策略选择与远程资源可用性。
+## 目录导航
 
-## ◇ 快速开始
+| 路径 | 内容 |
+|---|---|
+| [`File/`](./File) | iOS 与 macOS 主配置 |
+| [`Rule/`](./Rule) | Apple、AI、国内网络、流媒体、社交及其他规则集 |
+| [`Module/`](./Module) | Google Rewrite、YouTube、流量展示等 Surge 模块 |
+| [`Script/`](./Script) | 配套脚本及 YouTube 子目录 |
+| [`MCP/`](./MCP) | 网络状态、分流规则、连接问题的诊断提示词 |
+| [`icon/`](./icon) | 策略组与服务图标 |
+| [`traffic_circle.svg`](./traffic_circle.svg) | 流量展示 SVG 资源 |
 
-### 01 · 获取配置
+## 快速开始
 
-| 平台 | 配置文件 | 查看原始文件 |
-| :-- | :-- | :-- |
-| **iPhone / iPad** | [`Surge_iOS.conf`](File/Surge_iOS.conf) | [Raw](https://raw.githubusercontent.com/Vaerios/Nyora/Surge/File/Surge_iOS.conf) |
-| **Mac** | [`Surge_MacOS.conf`](File/Surge_MacOS.conf) | [Raw](https://raw.githubusercontent.com/Vaerios/Nyora/Surge/File/Surge_MacOS.conf) |
+1. **下载配置**：选择适合设备的 `.conf` 文件，在 Surge 中导入本地副本。
+2. **填写订阅**：将 `Mystic` 策略组中的 `policy-path=订阅链接` 替换为自己的 Surge 格式订阅地址。
+3. **接通规则资源**：将 `http://sol/Apple`、`http://sol/Ai` 等映射到可访问的规则内容；若没有相应的自定义映射，改为完整 HTTPS 规则文件地址。
+4. **接通图标资源**：`http://astra/...` 为自定义图标地址。无法访问时可使用本仓库 `icon/` 目录中的图片或删除 `icon-url` 参数。
+5. **验证策略**：确认规则加载成功、地区组存在节点，并逐项检查 Apple、国内网站、AI、视频及局域网访问。
 
-下载对应配置，在 Surge 中导入本地副本。**请先阅读下面的必需设置，不要将仓库模板原样作为生产配置使用。**
-
-### 02 · 配置自己的节点订阅
-
-在 `[Proxy Group]` 中找到 `Mystic`：
+例如，若不使用自定义规则映射，可在自己的配置副本中将：
 
 ```ini
-Mystic = select, policy-path=订阅链接, update-interval=-1, policy-regex-filter=香港|Hong Kong|🇭🇰|日本|Japan|🇯🇵|新加坡|Singapore|🇸🇬|台湾|Taiwan|美国|United States|🇺🇸, icon-url=http://astra/Mystic
+RULE-SET,http://sol/Ai,Ai
 ```
 
-将 `订阅链接` 替换为你自己的 **Surge 兼容订阅 URL**。`update-interval=-1` 是当前仓库的原始设置，**并不表示每天自动更新**。若需要周期更新，请依据 Surge 当前版本文档配置。
-
-### 03 · 确认规则与图标资源
-
-当前主配置使用 `http://sol/Apple`、`http://sol/Ai` 等自定义规则入口，以及 `http://astra/...` 图标入口。
-
-- **`http://sol/...`**：不是公开通用的规则下载地址；需要与仓库的资源映射模块及实际 Surge 环境配套验证。也可以在自己的配置副本中换成可直接访问的 HTTPS 规则文件 URL。
-- **`http://astra/...`**：用于策略图标展示；如果环境不支持，可换成可访问的图标地址，或移除 `icon-url`。
-- 仓库中的 [`Google Rewrite.sgmodule`](Module/Google%20Rewrite.sgmodule) 是作者配置所依赖的模块之一；**不能仅凭网页能跳转就认定 Surge 远程规则资源能够正确加载**，请检查资源更新状态。
-
-例如，将 AI 规则改为仓库原始地址：
+改为：
 
 ```ini
 RULE-SET,https://raw.githubusercontent.com/Vaerios/Nyora/Surge/Rule/Ai.list,Ai
 ```
 
-> [!IMPORTANT]
-> 公开配置中的 HTTP API/MCP 密钥属于敏感凭据。**在使用前请自行更换密钥，不要将真实密钥、订阅令牌或 MITM 证书上传至公开仓库。** 当前主配置中的 API 监听地址为 `127.0.0.1`；启用远程访问前必须重新评估认证、TLS 与网络暴露风险。
+这只是**资源地址替换示例**，并不意味着所有规则均适用于任何设备、地区或订阅。
 
-### 04 · 验证后启用
+## DNS 与网络兼容
 
-在 Surge 中确认：订阅与规则集加载成功、五个地区组按需出现节点、常用应用的规则命中与最终出口符合预期；随后分别测试国内直连、代理访问及局域网设备。首次使用建议保留一份已知可用的配置备份。
+当前配置采用阿里 DNS 和 DNSPod 的 DoH 服务，启用 `hijack-dns = *:53`，并为局域网配置了绕过范围。iOS 还包含 `always-real-ip = *.lan, *.local`。
 
-<br>
+- `always-real-ip` 不等于强制直连；需要结合局域网 DNS 和设备发现测试。
+- `skip-proxy` 与 `tun-excluded-routes` 作用不同，不宜直接合并理解。
+- `100.64.0.0/10` 涉及共享地址空间，使用虚拟组网时应检查其排除行为。
+- `http-api-mcp = true` 是当前配置中的 MCP 开关；远程控制能力还取决于实际监听、连接与授权设置。
+- `[MITM]` 段存在不代表所有 HTTPS 流量都在被解密；使用模块前应核实其要求。
 
-## ◈ 策略架构
+## 使用与安全说明
 
-<div align="center">
+> [!WARNING]
+> 公开仓库中不要提交真实订阅链接、控制器密码、MITM 证书或其他凭据。当前主配置包含 HTTP API 认证字段；在公开分享前应替换为非真实值，并轮换任何已暴露的有效凭据。历史提交也可能保留敏感信息。
 
-```mermaid
-flowchart TB
-    S[Surge 请求] --> R{按顺序匹配规则}
-    R -->|Apple / China / LAN / SYSTEM / GEOIP CN| D[DIRECT]
-    R -->|AI / 影音 / 社交| A[应用专属策略组]
-    R -->|未命中| P[Proxy]
-    A --> P
-    A --> G[指定地区]
-    P --> M[Mystic 节点池]
-    P --> G
-    M --> G
-    G --> JP[Japan · smart]
-    G --> TW[Taiwan · smart]
-    G --> US[America · smart]
-    G --> HK[HongKong · smart]
-    G --> SG[Singapore · smart]
-```
+本项目不是 Surge 官方产品，也不保证节点可用性、流媒体解锁或任何第三方服务的可访问性。第三方规则、脚本及资源须遵循各自许可。使用前建议备份配置，调整时一次只改动一项并检查 Surge 请求日志。
 
-</div>
+## 参考
 
-<sub>示意图表示主要逻辑关系，并非 Surge 引擎的完整执行时序。地区组通过 `include-other-group=Mystic` 获取并筛选订阅节点。</sub>
-
-### 应用级独立出口
-
-| 策略组 | 默认可选项 | 用途 |
-| :-- | :-- | :-- |
-| `Ai` | Proxy / 五地区 | AI 服务与相关接口 |
-| `Bilibili` | DIRECT / Taiwan | Bilibili 独立地区选择 |
-| `Disney` · `Netflix` | Proxy / 五地区 | 流媒体业务 |
-| `Spotify` · `YouTube` | Proxy / 五地区 | 音乐与视频 |
-| `Telegram` · `TikTok` · `Twitter` | Proxy / 五地区 | 通讯与社交 |
-| `Proxy` | Mystic / 五地区 | 未命中业务的默认代理策略 |
-
-**一个使用场景：** 默认代理选择香港，AI 单独选择美国，YouTube 选择日本，Bilibili 保持直连。业务策略相互独立，调整其中一个不必改动全部出口。
-
-### 分流顺序：精确规则优先
-
-```text
-自定义 REJECT
-       ↓
-Apple DIRECT → AI / 影音 / 社交专属策略
-       ↓
-China DIRECT → LAN DIRECT → SYSTEM DIRECT
-       ↓
-GEOIP,CN,DIRECT
-       ↓
-FINAL,Proxy,dns-failed
-```
-
-> [!TIP]
-> Surge 规则通常遵循先匹配先执行。若同一域名同时存在于两个规则集中，**规则顺序与策略不同** 才是需要重点检查的地方。不要为了减少重复条目而盲目合并不同业务的规则集。
-
-## ◇ 资源导航
-
-```text
-Nyora / Surge
-├── File/        # iOS 与 macOS 主配置
-├── Rule/        # 应用分流、国内直连与其他规则资源
-├── Module/      # Surge 模块
-├── Script/      # JavaScript 脚本与 YouTube 扩展
-├── MCP/         # MCP 网络诊断与操作参考
-├── icon/        # 图标资源与索引
-├── traffic_circle.svg
-└── README.md
-```
-
-| 分类 | 入口 | 说明 |
-| :-- | :-- | :-- |
-| **Core** | [`File/`](File/) | Surge iOS / macOS 主配置 |
-| **Rules** | [`Rule/`](Rule/) | Apple、Ai、China、Netflix、YouTube 等规则集 |
-| **Modules** | [`Module/`](Module/) | 流量展示、Google Rewrite、YouTube 扩展等 |
-| **Scripts** | [`Script/`](Script/) | 脚本工具与扩展逻辑 |
-| **MCP** | [`MCP/`](MCP/) | 网络状态、规则命中与故障诊断参考 |
-| **Visuals** | [`icon/`](icon/) · [`traffic_circle.svg`](traffic_circle.svg) | 图标与流量视觉素材 |
-
-<details>
-<summary><b>查看部分规则文件</b></summary>
-
-<br>
-
-[`Apple`](Rule/Apple.list) · [`Ai`](Rule/Ai.list) · [`Bilibili`](Rule/Bilibili.list) · [`China`](Rule/China.list) · [`Disney`](Rule/Disney.list) · [`Netflix`](Rule/Netflix.list) · [`Spotify`](Rule/Spotify.list) · [`Telegram`](Rule/Telegram.list) · [`TikTok`](Rule/TikTok.list) · [`Twitter`](Rule/Twitter.list) · [`YouTube`](Rule/YouTube.list)
-
-仓库还提供其他专项规则文件；**存在于仓库中不等于当前主配置已经引用或启用**。
-
-</details>
-
-<details>
-<summary><b>查看模块与脚本使用提示</b></summary>
-
-<br>
-
-- `AirportUsage.sgmodule`：流量展示相关扩展，需根据实际订阅与脚本参数配置。
-- `Google Rewrite.sgmodule`：与作者的自定义资源路径及改写逻辑相关。
-- `YouTube.sgmodule` / `YouTube Pro.sgmodule`：不同扩展可能匹配相同请求；**不建议未经检查同时启用**。
-- `YouTube for Safari.sgmodule`：文件标注 macOS，并包含需要 MITM 的请求/响应处理。
-- `Strategy-optimization.js`：策略辅助脚本，使用前应单独验证运行环境和兼容性。
-
-部分模块涉及 HTTPS 解密。**普通分流不需要 MITM；只有实际启用依赖解密的模块时，才应按需设置证书与主机名。**
-
-</details>
-
-## ◈ DNS · 网络兼容 · MCP
-
-<table>
-<tr><th align="left">能力</th><th align="left">当前配置设计</th></tr>
-<tr><td>Encrypted DNS</td><td>阿里 DNS 的 DoQ（223.5.5.5 / 223.6.6.6）+ DNSPod 的 DoH（doh.pub）</td></tr>
-<tr><td>DNS Hijacking</td><td><code>hijack-dns = *:53</code>，针对接管范围内的传统 DNS 流量</td></tr>
-<tr><td>Local Names</td><td>iOS 中 <code>*.lan</code> / <code>*.local</code> 的真实 IP 兼容项</td></tr>
-<tr><td>Local Routes</td><td><code>skip-proxy</code> 与 <code>tun-excluded-routes</code> 分别处理不同层面的绕过</td></tr>
-<tr><td>GeoIP</td><td>引用 Loyalsoldier 的 CN / Private MMDB</td></tr>
-<tr><td>MCP</td><td>主配置启用 <code>http-api-mcp = true</code>，配合授权与访问控制使用</td></tr>
-</table>
-
-**关于 `100.64.0.0/10`：** 当前主配置已不再将该共享地址空间列入绕过范围（`tun-excluded-routes` 与 `skip-proxy` 均已移除）。若使用虚拟组网、特殊运营商网络或远程设备访问，请单独核验是否需要自行加回，不要把它一概当作普通家庭局域网地址。
-
-**关于 MCP：** 启用开关并不意味着互联网远程控制自动可用。设备可达性、API 监听范围、身份认证与安全通道均需要单独配置和验证。
-
-## ◇ 常见问题
-
-<details>
-<summary><b>为什么导入后没有节点？</b></summary>
-
-<br>
-
-检查 `Mystic` 的 `policy-path` 是否替换为有效的 Surge 订阅；再检查地区节点命名是否命中 `policy-regex-filter`。地区分组根据名称筛选，不能自动保证节点实际地理位置。
-
-</details>
-
-<details>
-<summary><b>为什么规则或图标无法加载？</b></summary>
-
-<br>
-
-主配置包含 `http://sol/...` 与 `http://astra/...` 自定义地址。请确认配套映射确实在 Surge 的资源获取链路中生效；否则在本地副本中替换为有效 HTTPS URL。
-
-</details>
-
-<details>
-<summary><b>为什么 AI、流媒体或社交服务走错出口？</b></summary>
-
-<br>
-
-先查看 Surge 请求详情中的**实际命中规则、策略组与最终节点**。例如 Grok 可能同时被 AI 与 Twitter 规则覆盖；先命中的策略决定结果。不要只凭域名属于哪个品牌判断最终出口。
-
-</details>
-
-<details>
-<summary><b>可以删除整个 MITM 配置吗？</b></summary>
-
-<br>
-
-若仅使用普通代理分流，不需要开启 HTTPS 解密；但部分独立模块有自己的 `[MITM]` 声明。删除主配置中的空 `[MITM]` 段，与禁用模块的 MITM 功能不是同一件事。
-
-</details>
-
-<details>
-<summary><b>为什么 HomePod、AirPlay 或局域网设备异常？</b></summary>
-
-<br>
-
-逐项检查本地 DNS、mDNS、IPv6、多播流量、TUN 排除路由与系统代理绕过。先做启停 Surge 的对照测试，不要一次性修改多个网络参数。
-
-</details>
-
-## ◇ 维护原则
-
-> **稳定性优先于规则数量，验证优先于经验猜测。**
-
-1. **先备份，再变更。** 保留可回滚的配置版本。
-2. **先核实，再分流。** 通过实际请求记录判断策略是否正确。
-3. **先小改，再观察。** DNS、TUN、规则顺序与脚本不要同时大幅调整。
-4. **先审计，再公开。** 清理订阅凭据、API 密钥与证书材料。
-5. **尊重上游。** 第三方规则、脚本和图标遵循其原始许可与署名要求。
-
-如发现异常，欢迎通过 [GitHub Issues](https://github.com/Vaerios/Nyora/issues) 提供**脱敏**后的复现步骤、Surge 版本、命中规则与最终策略。
-
-### Reference
-
-[Surge 官方网站](https://nssurge.com/) · [Surge Manual](https://manual.nssurge.com/) · [Surge iOS 6](https://nssurge.com/surge-ios-6) · [Loyalsoldier GeoIP](https://github.com/Loyalsoldier/geoip)
-
-<br>
+[Surge 官方手册](https://manual.nssurge.com/) · [Surge iOS 6](https://nssurge.com/surge-ios-6) · [Loyalsoldier GeoIP](https://github.com/Loyalsoldier/geoip)
 
 ---
 
 <div align="center">
 
-### ✦ MYSTIC
+**MYSTIC** · A clearer route for every connection.
 
-**Intelligent by design. Precise by nature.**
-
-<sub>Crafted for Surge · Curated by <a href="https://github.com/Vaerios">Vaerios</a></sub>
-
-<br>
-
-[![Back to top](https://img.shields.io/badge/↑-BACK%20TO%20TOP-111827?style=flat-square)](#-mystic)
+<sub>Designed for control. Built for clarity.</sub>
 
 </div>
