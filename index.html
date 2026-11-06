@@ -17,7 +17,7 @@
 <main id="main">
 <section id="top" class="hero"><div class="hero-orbit orbit-a" aria-hidden="true"></div><div class="hero-orbit orbit-b" aria-hidden="true"></div><div class="hero-core" aria-hidden="true"><span>✦</span></div>
 <div class="hero-content"><p class="eyebrow"><span class="live-dot"></span> SURGE · IOS / MACOS · NETWORK INTELLIGENCE</p><h1>MYSTIC<span class="title-mark">.</span></h1><p class="hero-sub">Intelligent by Design.<br><em>Precise by Nature.</em></p><p class="hero-desc">让每一条连接，都有清晰的方向。<br>应用独立出口、智能地区选路、加密 DNS 与可审计的网络策略。</p>
-<div class="hero-cta"><button id="enterExperience" class="primary-btn" type="button">进入沉浸体验 <span>↗</span></button><a class="ghost-btn" href="#architecture">探索架构 ↓</a></div><p class="hero-note">点击「进入沉浸体验」可播放背景歌曲；滚动期间持续播放，支持随时暂停。</p></div>
+<div class="hero-cta"><button id="enterExperience" class="primary-btn" type="button">进入沉浸体验 <span>↗</span></button><a class="ghost-btn" href="#architecture">探索架构 ↓</a></div><p class="hero-note">点击「进入沉浸体验」启动音乐；在页面底部播放器中自由选歌，滚动期间持续播放。</p></div>
 <div class="hero-bottom"><span>01 / NETWORK AS ART</span><span>SCROLL TO EXPLORE ↓</span></div></section>
 <section class="stats reveal" aria-label="项目概览"><div><strong>02</strong><span>PLATFORMS</span><small>iOS / macOS</small></div><div><strong>05</strong><span>SMART REGIONS</span><small>JP · TW · US · HK · SG</small></div><div><strong>11</strong><span>ACTIVE RULE SETS</span><small>当前主配置引用</small></div><div><strong>∞</strong><span>FLEXIBLE ROUTING</span><small>策略独立选择</small></div></section>
 <section id="architecture" class="section"><div class="section-head reveal"><p class="eyebrow">01 / THE SYSTEM</p><h2>网络流动，<span>秩序自成。</span></h2><p>从请求命中到最终出口，每一步都应有迹可循。</p></div><div class="diagram-shell reveal"><div class="diagram-top"><span class="diagram-status"><span class="live-dot"></span> ROUTING ARCHITECTURE</span><span>SVG / MOTION READY</span></div><img src="assets/routing-architecture.svg" alt="Surge 请求分流架构：直连与应用专属策略进入地区节点组" loading="lazy"><p class="diagram-caption">策略示意图，不代表 Surge 引擎的全部内部执行顺序。</p></div></section>
@@ -28,6 +28,21 @@
 <section class="endcap reveal"><p class="eyebrow">READY TO EXPLORE?</p><h2>Make every<br><em>connection count.</em></h2><div class="hero-cta"><a class="primary-btn" href="https://raw.githubusercontent.com/Vaerios/Nyora/Surge/File/Surge_iOS.conf" target="_blank" rel="noopener noreferrer">iOS 配置 ↗</a><a class="ghost-btn" href="https://raw.githubusercontent.com/Vaerios/Nyora/Surge/File/Surge_MacOS.conf" target="_blank" rel="noopener noreferrer">macOS 配置 ↗</a></div></section>
 </main>
 <footer><span>✦ MYSTIC / NYORA</span><span>Crafted for Surge · Curated by <a href="https://github.com/Vaerios" target="_blank" rel="noopener noreferrer">Vaerios</a></span><a href="#top">BACK TO TOP ↑</a></footer>
-<audio id="backgroundMusic" src="./assets/audio/background.mp3" preload="none" loop></audio>
-<div class="music-panel" id="musicPanel"><button id="musicPlay" type="button" aria-label="播放背景音乐" aria-pressed="false">▶</button><div class="music-copy"><strong>平生不晚 · 荒</strong><small id="musicStatus" aria-live="polite">音乐已暂停</small></div><div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><label class="volume-label" for="volume">音量</label><input id="volume" type="range" min="0" max="100" value="22" aria-label="背景音乐音量"></div>
+<audio id="backgroundMusic" preload="none" playsinline></audio>
+<section class="playlist-drawer" id="playlistDrawer" aria-label="音乐播放列表" aria-hidden="true" inert>
+ <div class="playlist-head"><div><span class="playlist-kicker">MYSTIC / AUDIO LIBRARY</span><h2>音乐播放列表 <span id="trackCount">16 TRACKS</span></h2></div><button type="button" id="playlistClose" aria-label="关闭播放列表">✕</button></div>
+ <div class="playlist-search-wrap"><label class="sr-only" for="playlistSearch">搜索歌曲或歌手</label><input id="playlistSearch" type="search" placeholder="搜索歌曲 / 歌手" autocomplete="off"></div>
+ <div id="playlistItems" class="playlist-items" role="list"></div>
+ <p class="playlist-foot">音频按需加载 · 播放需用户主动操作</p>
+</section>
+<div class="music-panel" id="musicPanel" aria-label="音乐播放器">
+ <button id="playlistOpen" class="music-library-btn" type="button" aria-controls="playlistDrawer" aria-expanded="false" aria-label="打开音乐列表">☷</button>
+ <button id="musicPrev" class="music-control" type="button" aria-label="上一首">⏮</button>
+ <button id="musicPlay" type="button" aria-label="播放音乐" aria-pressed="false">▶</button>
+ <button id="musicNext" class="music-control" type="button" aria-label="下一首">⏭</button>
+ <div class="music-copy"><strong id="musicTitle">加载歌单中…</strong><small id="musicStatus" aria-live="polite">准备就绪</small>
+ <div class="music-progress"><span id="musicElapsed">0:00</span><input type="range" id="musicSeek" min="0" max="1000" value="0" aria-label="播放进度"><span id="musicDuration">0:00</span></div></div>
+ <button id="musicMode" class="music-control" type="button" aria-label="播放模式：顺序播放" title="切换播放模式">⇄</button>
+ <label class="volume-label" for="volume">音量</label><input id="volume" type="range" min="0" max="100" value="30" aria-label="音乐音量">
+</div>
 </body></html>
