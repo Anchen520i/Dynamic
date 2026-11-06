@@ -13,9 +13,12 @@
 ![DNS](https://img.shields.io/badge/DNS-DoH-12bfa7?style=for-the-badge)
 ![License](https://img.shields.io/badge/Resources-User%20Configured-8b5cf6?style=for-the-badge)
 
-[配置下载](#配置入口) · [策略架构](#策略架构) · [应用出口](#应用级独立出口) · [分流顺序](#分流优先级) · [使用说明](#快速开始)
+[✦ 沉浸式交互主页](https://vaerios.github.io/Nyora/) · [配置下载](#配置入口) · [策略架构](#策略架构) · [应用出口](#应用级独立出口) · [分流顺序](#分流优先级) · [使用说明](#快速开始)
 
 </div>
+
+> [!TIP]
+> **MYSTIC Interactive · 交互式展示站**：本仓库包含 [`index.html`](./index.html)、[`styles.css`](./styles.css)、[`app.js`](./app.js)，可通过 GitHub Pages 部署沉浸式主页。页面支持滚动动画、移动端适配和用户点击后播放的背景歌曲《荒》。浏览器通常不允许仅靠滚动自动播放有声音乐。部署步骤见 [`DEPLOY.md`](./DEPLOY.md)。
 
 > [!IMPORTANT]
 > 本仓库提供配置、规则与脚本资源，不提供代理节点。配置中的 `policy-path=订阅链接`、`http://sol/...` 和 `http://astra/...` 为需自行配置的订阅或自定义资源映射，不应假定可在其他设备直接使用。请先使用本地副本验证。
