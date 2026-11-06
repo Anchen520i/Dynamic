@@ -7,7 +7,7 @@
 **Intelligent by Design. Precise by Nature.**
 
 为 Surge iOS 与 macOS 打造的精细化网络策略
-**独立出口 · 智能选路 · 规则体系**
+>**独立出口 · 智能选路 · 规则体系**
 
 ![Surge](https://img.shields.io/badge/Surge-iOS%20%26%20macOS-111827?style=for-the-badge&logo=apple&logoColor=white)
 ![Routing](https://img.shields.io/badge/Routing-Rule%20Based-5b7fff?style=for-the-badge)
