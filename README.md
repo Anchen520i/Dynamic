@@ -18,9 +18,7 @@
 </div>
 
 > [!TIP]
-> **MYSTIC Interactive · 交互式展示站**：本仓库包含 [`index.html`](./index.html)、[`styles.css`](./styles.css)、[`app.js`](./app.js)，可通过 GitHub Pages 部署沉浸式主页。页面支持滚动动画、移动端适配和用户点击后播放的背景歌曲《荒》。浏览器通常不允许仅靠滚动自动播放有声音乐。部署步骤见 [`DEPLOY.md`](./DEPLOY.md)。
-
-> [!IMPORTANT]
+> **MYSTIC Interactive · 交互式展示站**：
 > 本仓库提供配置、规则与脚本资源，不提供代理节点。配置中的 `policy-path=订阅链接`、`http://sol/...` 和 `http://astra/...` 为需自行配置的订阅或自定义资源映射，不应假定可在其他设备直接使用。请先使用本地副本验证。
 
 ## 配置入口
