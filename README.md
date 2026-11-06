@@ -13,7 +13,7 @@
 ![DNS](https://img.shields.io/badge/DNS-DoH-12bfa7?style=for-the-badge)
 ![License](https://img.shields.io/badge/Resources-User%20Configured-8b5cf6?style=for-the-badge)
 
-[✦ 沉浸式交互主页](https://vaerios.github.io/Nyora/) · [配置下载](#配置入口) · [策略架构](#策略架构) · [应用出口](#应用级独立出口) · [分流顺序](#分流优先级) · [使用说明](#快速开始)
+[✦ 沉浸式交互主页](https://vaerios.github.io/Nyora/) 
 
 </div>
 
