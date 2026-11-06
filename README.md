@@ -6,7 +6,7 @@
 
 **Intelligent by Design. Precise by Nature.**
 
-为 Surge iOS 与 macOS 打造的精细化网络策略配置。  
+为 Surge iOS 与 macOS 打造的精细化网络策略
 **应用独立出口 · Smart 智能选路 · 加密 DNS · 可审计的规则体系**
 
 ![Surge](https://img.shields.io/badge/Surge-iOS%20%26%20macOS-111827?style=for-the-badge&logo=apple&logoColor=white)
@@ -18,7 +18,7 @@
   <img src="./assets/interactive-entry.svg" alt="进入 MYSTIC 沉浸式交互主页：动态渐变呼吸入口" width="100%" />
 </a>
 
-<sub>✦ 点击上方横幅，探索动态流程、16 首歌曲播放列表与移动端交互体验</sub>
+<sub>✦ 点击上方横幅，探索动态交互体验</sub>
 
 [配置下载](#配置入口) · [策略架构](#策略架构) · [应用出口](#应用级独立出口) · [分流顺序](#分流优先级) · [使用说明](#快速开始)
 
