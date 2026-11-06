@@ -86,24 +86,19 @@ DOMAIN-SUFFIX,opal.google
 DOMAIN-SUFFIX,opal.google.com
 AND,((DOMAIN-KEYWORD,antigravity-auto-updater-),(DOMAIN-SUFFIX,run.app))
 
-# Microsoft Copilot / GitHub Copilot
-DOMAIN,copilot-proxy.githubusercontent.com
-DOMAIN,copilot-workspace.githubnext.com
-DOMAIN,copilotprodattachments.blob.core.windows.net
-DOMAIN,gateway.bingviz.microsoft.net
-DOMAIN,gateway.bingviz.microsoftapp.net
+
+
+
+# Microsoft Copilot — iPhone 客户端
 DOMAIN,licensing.m365.svc.cloud.microsoft
 DOMAIN,login.microsoftonline.com
 DOMAIN,m365.cloud.microsoft
-DOMAIN,models.inference.ai.azure.com
 DOMAIN,substrate.office.com
 DOMAIN,sydney.bing.com
 DOMAIN,titles.prod.mos.microsoft.com
-DOMAIN-SUFFIX,copilot-stg.com
 DOMAIN-SUFFIX,copilot.cloud.microsoft
 DOMAIN-SUFFIX,copilot.com
 DOMAIN-SUFFIX,copilot.microsoft.com
-DOMAIN-SUFFIX,githubcopilot.com
 
 # Perplexity / Grok / Meta
 DOMAIN,ai.developer.meta.com
