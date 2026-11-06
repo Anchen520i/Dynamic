@@ -1,10 +1,10 @@
 #!name=机场流量与到期信息
-#!desc=显示机场已用/剩余流量、上传/下载和到期时间。仅添加信息面板；无需 MITM。需要配套 AirportUsage.js。
-#!arguments=subscription_url,display_name:机场流量,script_url:AirportUsage.js
-#!arguments-desc=subscription_url 填机场原始订阅链接；display_name 填面板名称；script_url 默认读取主配置同目录的 AirportUsage.js，也可填你自己托管的脚本 HTTPS 地址。订阅链接仅填本机参数，不要写入公开文件。
+#!desc=显示机场已用/剩余流量、上传/下载和到期时间。自动读取 GitHub 脚本，仅添加信息面板，无需 MITM。
+#!arguments=subscription_url,display_name:机场流量
+#!arguments-desc=subscription_url 填机场完整原始订阅链接；display_name 填面板名称。脚本从 Vaerios/Nyora 自动下载，无需复制本地 JS。订阅链接仅填本机参数，不要写入公开文件。
 
 [Script]
-AirportUsagePanel = type=generic,timeout=15,script-path={{{script_url}}},argument="{{{subscription_url}}}"
+AirportUsagePanel = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/Vaerios/Nyora/refs/heads/Surge/Script/AirportUsage.js,argument="{{{subscription_url}}}"
 
 [Panel]
 {{{display_name}}} = script-name=AirportUsagePanel,update-interval=3600
