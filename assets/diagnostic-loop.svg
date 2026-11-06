@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 390" role="img" aria-label="ENGINEERING LOOP">
+<title>ENGINEERING LOOP</title><desc>Observe → Explain → Verify → Adjust → Retest</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0B1327"/><stop offset="1" stop-color="#131D38"/></linearGradient>
+ <linearGradient id="wire"><stop stop-color="#4FA9FF"/><stop offset=".5" stop-color="#A88BFF"/><stop offset="1" stop-color="#3DE0C0"/></linearGradient>
+ <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>
+<style>
+ text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+ .edge{fill:none;stroke:url(#wire);stroke-width:2;stroke-linecap:round;stroke-dasharray:5 10;animation:travel 3.2s linear infinite}
+ .halo{opacity:.38;animation:breathe 3s ease-in-out infinite}
+ .card{fill:#182641;stroke:#40557A;stroke-width:1}
+ .name{fill:#F4F7FF;font-size:16px;font-weight:700}
+ .sub{fill:#9DB2D2;font-size:11px}
+ .dot{animation:breathe 2.5s ease-in-out infinite}
+ @keyframes travel{to{stroke-dashoffset:-60}}
+ @keyframes breathe{0%,100%{opacity:.25}50%{opacity:.9}}
+ @media (prefers-reduced-motion:reduce){.edge,.halo,.dot{animation:none}}
+</style>
+<rect width="100%" height="100%" rx="22" fill="url(#bg)"/>
+<text x="34" y="43" fill="#A6BADE" font-size="12" letter-spacing="3">ENGINEERING LOOP</text>
+<text x="34" y="68" fill="#7189B0" font-size="12">Observe → Explain → Verify → Adjust → Retest</text>
+<path class="edge" d="M202 163 L226 163"/>
+<path class="edge" d="M394 163 L418 163"/>
+<path class="edge" d="M586 163 L610 163"/>
+<path class="edge" d="M778 163 L802 163"/>
+<path class="edge" d="M864 199 L864 259"/>
+<path class="edge" d="M864 259 L118 259"/>
+<path class="edge" d="M118 259 L118 199"/>
+<rect class="halo" x="32" y="125" width="172" height="76" rx="15" fill="none" stroke="#4FA9FF" stroke-width="3" filter="url(#glow)"/>
+<rect class="card" x="34" y="127" width="168" height="72" rx="13"/>
+<circle class="dot" cx="53" cy="150" r="5" fill="#4FA9FF"/>
+<text class="name" x="66" y="156">OBSERVE</text>
+<text class="sub" x="52" y="178">Request &amp; logs</text>
+<rect class="halo" x="224" y="125" width="172" height="76" rx="15" fill="none" stroke="#A88BFF" stroke-width="3" filter="url(#glow)"/>
+<rect class="card" x="226" y="127" width="168" height="72" rx="13"/>
+<circle class="dot" cx="245" cy="150" r="5" fill="#A88BFF"/>
+<text class="name" x="258" y="156">EXPLAIN</text>
+<text class="sub" x="244" y="178">Rule &amp; policy</text>
+<rect class="halo" x="416" y="125" width="172" height="76" rx="15" fill="none" stroke="#3DE0C0" stroke-width="3" filter="url(#glow)"/>
+<rect class="card" x="418" y="127" width="168" height="72" rx="13"/>
+<circle class="dot" cx="437" cy="150" r="5" fill="#3DE0C0"/>
+<text class="name" x="450" y="156">VERIFY</text>
+<text class="sub" x="436" y="178">DNS · TUN · MCP</text>
+<rect class="halo" x="608" y="125" width="172" height="76" rx="15" fill="none" stroke="#F2B86B" stroke-width="3" filter="url(#glow)"/>
+<rect class="card" x="610" y="127" width="168" height="72" rx="13"/>
+<circle class="dot" cx="629" cy="150" r="5" fill="#F2B86B"/>
+<text class="name" x="642" y="156">ADJUST</text>
+<text class="sub" x="628" y="178">One variable</text>
+<rect class="halo" x="800" y="125" width="128" height="76" rx="15" fill="none" stroke="#F07FA6" stroke-width="3" filter="url(#glow)"/>
+<rect class="card" x="802" y="127" width="124" height="72" rx="13"/>
+<circle class="dot" cx="821" cy="150" r="5" fill="#F07FA6"/>
+<text class="name" x="834" y="156">RETEST</text>
+<text class="sub" x="820" y="178">Compare</text>
+<text x="34" y="365" fill="#7086AB" font-size="11">MYSTIC  /  STATIC FALLBACK · CSS MOTION · NO JAVASCRIPT</text></svg>
