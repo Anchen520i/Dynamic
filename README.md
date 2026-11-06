@@ -2,7 +2,7 @@
 
 <img src="./icon/Mystic.png" width="96" alt="Mystic icon" />
 
-# M Y S T I C
+# ✨ M Y S T I C ✨
 
 **Intelligent by Design. Precise by Nature.**
 
