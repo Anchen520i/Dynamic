@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 285" role="img" aria-labelledby="t d">
+<title id="t">MYSTIC Interactive — 沉浸式交互主页</title>
+<desc id="d">渐变流光与呼吸光效的交互主页入口。点击图片进入 MYSTIC 网站。</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080F20"/><stop offset=".55" stop-color="#162342"/><stop offset="1" stop-color="#100F2C"/></linearGradient>
+ <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#42DCE7"/><stop offset=".5" stop-color="#A58BFF"/><stop offset="1" stop-color="#F47BB8"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#7566F4" stop-opacity=".4"/><stop offset="1" stop-color="#7566F4" stop-opacity="0"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<style>
+ .pulse{animation:pulse 3.8s ease-in-out infinite;transform-origin:500px 144px}
+ .border{stroke-dasharray:14 10;animation:move 9s linear infinite}
+ .spark{animation:twinkle 2.6s ease-in-out infinite}
+ .spark2{animation:twinkle 3.4s ease-in-out infinite reverse}
+ .button{animation:buttonPulse 3s ease-in-out infinite}
+ @keyframes pulse{0%,100%{opacity:.48;transform:scale(.97)}50%{opacity:.96;transform:scale(1.04)}}
+ @keyframes move{to{stroke-dashoffset:-192}}
+ @keyframes twinkle{0%,100%{opacity:.2}50%{opacity:1}}
+ @keyframes buttonPulse{0%,100%{opacity:.78}50%{opacity:1}}
+ @media(prefers-reduced-motion:reduce){.pulse,.border,.spark,.spark2,.button{animation:none}}
+ text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+</style>
+<rect width="1000" height="285" rx="24" fill="url(#bg)"/>
+<ellipse class="pulse" cx="500" cy="144" rx="355" ry="160" fill="url(#glow)" filter="url(#soft)"/>
+<rect x="10" y="10" width="980" height="265" rx="20" fill="none" stroke="url(#neon)" stroke-opacity=".42" stroke-width="1.5"/>
+<rect class="border" x="17" y="17" width="966" height="251" rx="17" fill="none" stroke="url(#neon)" stroke-width="1.6" opacity=".65"/>
+<g fill="#8CE6F5"><circle class="spark" cx="103" cy="77" r="3"/><circle class="spark2" cx="883" cy="67" r="3"/><circle class="spark" cx="905" cy="218" r="2.5"/><circle class="spark2" cx="113" cy="222" r="2.5"/></g>
+<text x="500" y="64" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="4" fill="#99ACD5">ENTER THE EXPERIENCE</text>
+<text x="500" y="121" text-anchor="middle" font-size="46" font-weight="800" letter-spacing="8" fill="#F5F7FF">MYSTIC</text>
+<text x="500" y="149" text-anchor="middle" font-size="16" fill="#B9C9E9">沉浸式交互主页 · 音乐库 · 动态策略可视化</text>
+<rect class="button" x="351" y="173" width="298" height="52" rx="26" fill="#283C69" stroke="url(#neon)" stroke-width="2"/>
+<text x="500" y="205" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">✦  进入沉浸式体验  →</text>
+<text x="500" y="251" text-anchor="middle" font-size="12" letter-spacing="2" fill="#8CA2C9">16 TRACKS  ·  INTERACTIVE FLOW  ·  iPHONE READY</text>
+</svg>
