@@ -61,7 +61,7 @@
 
 ### ◇ 加密解析
 
-通过阿里 DNS 与 DNSPod 的 DNS over HTTPS 进行解析，并保留本地域名与网络兼容性设置。
+通过阿里 DNS 的 DNS over QUIC（223.5.5.5 / 223.6.6.6）与 DNSPod 的 DNS over HTTPS（doh.pub）进行解析，并保留本地域名与网络兼容性设置。
 
 </td>
 <td valign="top">
@@ -230,7 +230,7 @@ Nyora / Surge
 
 <table>
 <tr><th align="left">能力</th><th align="left">当前配置设计</th></tr>
-<tr><td>Encrypted DNS</td><td>阿里 DNS + DNSPod 的 DoH 解析</td></tr>
+<tr><td>Encrypted DNS</td><td>阿里 DNS 的 DoQ（223.5.5.5 / 223.6.6.6）+ DNSPod 的 DoH（doh.pub）</td></tr>
 <tr><td>DNS Hijacking</td><td><code>hijack-dns = *:53</code>，针对接管范围内的传统 DNS 流量</td></tr>
 <tr><td>Local Names</td><td>iOS 中 <code>*.lan</code> / <code>*.local</code> 的真实 IP 兼容项</td></tr>
 <tr><td>Local Routes</td><td><code>skip-proxy</code> 与 <code>tun-excluded-routes</code> 分别处理不同层面的绕过</td></tr>
@@ -238,7 +238,7 @@ Nyora / Surge
 <tr><td>MCP</td><td>主配置启用 <code>http-api-mcp = true</code>，配合授权与访问控制使用</td></tr>
 </table>
 
-**关于 `100.64.0.0/10`：** 当前主配置将该共享地址空间列入绕过范围。若使用虚拟组网、特殊运营商网络或远程设备访问，请单独核验，不要把它一概当作普通家庭局域网地址。
+**关于 `100.64.0.0/10`：** 当前主配置已不再将该共享地址空间列入绕过范围（`tun-excluded-routes` 与 `skip-proxy` 均已移除）。若使用虚拟组网、特殊运营商网络或远程设备访问，请单独核验是否需要自行加回，不要把它一概当作普通家庭局域网地址。
 
 **关于 MCP：** 启用开关并不意味着互联网远程控制自动可用。设备可达性、API 监听范围、身份认证与安全通道均需要单独配置和验证。
 
