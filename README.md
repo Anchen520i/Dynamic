@@ -35,8 +35,6 @@
   <img src="./assets/routing-architecture.svg" alt="Mystic 智能分流架构" width="100%" />
 </div>
 
-> 图示反映当前配置的主要策略关系，而不是完整的 Surge 内部执行时序。SVG 使用轻量 CSS 动画；在不支持动画的 GitHub 客户端中仍可作为静态图显示。
-
 Mystic 是节点订阅池；五个地区 `smart` 策略组通过 `include-other-group=Mystic` 引入并按节点名称筛选。`Proxy` 是默认代理策略，业务组既可以跟随 `Proxy`，也可以独立选择地区。
 
 ## 应用级独立出口
