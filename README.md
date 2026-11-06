@@ -268,7 +268,7 @@ RULE-SET,https://raw.githubusercontent.com/Vaerios/Nyora/Surge/Rule/Ai.list,Ai
 
 <div align="center">
 
-### ✦ M Y S T I C
+### ✦ M Y S T I C ✦
 
 **Intelligent by Design. Precise by Nature.**
 
