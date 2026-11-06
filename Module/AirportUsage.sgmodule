@@ -1,10 +1,10 @@
 #!name=机场流量与到期信息
-#!desc=显示机场已用/剩余流量、上传/下载和到期时间。自动读取 GitHub 脚本，仅添加信息面板，无需 MITM。
-#!arguments=subscription_url,display_name:机场流量
+#!desc=五行流量卡片：已用/总量、使用比例彩色进度条、50条分档趣味文案、到期与更新时间。无需 MITM。
+#!arguments=subscription_url,display_name:WestData
 #!arguments-desc=subscription_url 填机场完整原始订阅链接；display_name 填面板名称。脚本从 Vaerios/Nyora 自动下载，无需复制本地 JS。订阅链接仅填本机参数，不要写入公开文件。
 
 [Script]
 AirportUsagePanel = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/Vaerios/Nyora/refs/heads/Surge/Script/AirportUsage.js,argument="{{{subscription_url}}}"
 
 [Panel]
-{{{display_name}}} = script-name=AirportUsagePanel,update-interval=3600
+{{{display_name}}} = script-name=AirportUsagePanel,update-interval=1800
