@@ -7,7 +7,7 @@
 **Intelligent by Design. Precise by Nature.**
 
 为 Surge iOS 与 macOS 打造的精细化网络策略
-**应用独立出口 · Smart 智能选路 · 加密 DNS · 可审计的规则体系**
+**独立出口 · 智能选路 · 规则体系**
 
 ![Surge](https://img.shields.io/badge/Surge-iOS%20%26%20macOS-111827?style=for-the-badge&logo=apple&logoColor=white)
 ![Routing](https://img.shields.io/badge/Routing-Rule%20Based-5b7fff?style=for-the-badge)
@@ -25,8 +25,7 @@
 </div>
 
 > [!TIP]
-> **MYSTIC Interactive · 交互式展示站**：
-> 点击【沉浸式交互主页】，解锁歌曲🎵
+> **MYSTIC Interactive · 交互式展示站**
 
 > [!IMPORTANT]
 > 本仓库提供配置、规则与脚本资源，不提供代理节点。配置中的 `policy-path=订阅链接`、`http://sol/...` 和 `http://astra/...` 为需自行配置的订阅或自定义资源映射，不应假定可在其他设备直接使用。请先使用本地副本验证。
