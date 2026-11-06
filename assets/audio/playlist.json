@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "tracks": [
+    {
+      "id": "track-01",
+      "title": "迷人的危险",
+      "artist": "Dance Flow",
+      "src": "./assets/audio/01.mp3",
+      "duration": 206
+    },
+    {
+      "id": "track-02",
+      "title": "一介书生",
+      "artist": "Vk",
+      "src": "./assets/audio/02.mp3",
+      "duration": 273
+    },
+    {
+      "id": "track-03",
+      "title": "狂野想乡",
+      "artist": "Vk",
+      "src": "./assets/audio/03.mp3",
+      "duration": 232
+    },
+    {
+      "id": "track-04",
+      "title": "满天星辰不及你",
+      "artist": "ycccc",
+      "src": "./assets/audio/04.mp3",
+      "duration": 216
+    },
+    {
+      "id": "track-05",
+      "title": "Butter-Fly",
+      "artist": "和田光司",
+      "src": "./assets/audio/05.mp3",
+      "duration": 258
+    },
+    {
+      "id": "track-06",
+      "title": "沈园外",
+      "artist": "小田音乐社",
+      "src": "./assets/audio/06.mp3",
+      "duration": 223
+    },
+    {
+      "id": "track-07",
+      "title": "我怕来者不是你",
+      "artist": "小蓝背心",
+      "src": "./assets/audio/07.mp3",
+      "duration": 212
+    },
+    {
+      "id": "track-08",
+      "title": "荒",
+      "artist": "平生不晚",
+      "src": "./assets/audio/08.mp3",
+      "duration": 252
+    },
+    {
+      "id": "track-09",
+      "title": "我期待的不是雪 (而是有你的冬天)",
+      "artist": "张妙格",
+      "src": "./assets/audio/09.mp3",
+      "duration": 166
+    },
+    {
+      "id": "track-10",
+      "title": "一路生花",
+      "artist": "温奕心",
+      "src": "./assets/audio/10.mp3",
+      "duration": 256
+    },
+    {
+      "id": "track-11",
+      "title": "纯真年代",
+      "artist": "爱朵女孩",
+      "src": "./assets/audio/11.mp3",
+      "duration": 245
+    },
+    {
+      "id": "track-12",
+      "title": "星光派对",
+      "artist": "赵希予",
+      "src": "./assets/audio/12.mp3",
+      "duration": 209
+    },
+    {
+      "id": "track-13",
+      "title": "春庭雪",
+      "artist": "邓寓君(等什么君)",
+      "src": "./assets/audio/13.mp3",
+      "duration": 241
+    },
+    {
+      "id": "track-14",
+      "title": "九张机",
+      "artist": "锦零",
+      "src": "./assets/audio/14.mp3",
+      "duration": 220
+    },
+    {
+      "id": "track-15",
+      "title": "空山新雨后",
+      "artist": "锦零",
+      "src": "./assets/audio/15.mp3",
+      "duration": 174
+    },
+    {
+      "id": "track-16",
+      "title": "叹云兮",
+      "artist": "鞠婧祎",
+      "src": "./assets/audio/16.mp3",
+      "duration": 283
+    }
+  ]
+}
