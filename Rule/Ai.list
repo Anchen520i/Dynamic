@@ -86,10 +86,7 @@ DOMAIN-SUFFIX,opal.google
 DOMAIN-SUFFIX,opal.google.com
 AND,((DOMAIN-KEYWORD,antigravity-auto-updater-),(DOMAIN-SUFFIX,run.app))
 
-
-
-
-# Microsoft Copilot — iPhone 客户端
+# Copilot
 DOMAIN,licensing.m365.svc.cloud.microsoft
 DOMAIN,login.microsoftonline.com
 DOMAIN,m365.cloud.microsoft
