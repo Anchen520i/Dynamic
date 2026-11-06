@@ -13,7 +13,7 @@
 ![DNS](https://img.shields.io/badge/DNS-DoH-12bfa7?style=for-the-badge)
 ![License](https://img.shields.io/badge/Resources-User%20Configured-8b5cf6?style=for-the-badge)
 
-[✦ 沉浸式交互主页](https://vaerios.github.io/Nyora/) 
+[✦ 沉浸式交互主页 ✦](https://vaerios.github.io/Nyora/) 
 
 </div>
 
