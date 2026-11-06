@@ -6,20 +6,30 @@
 
 **Intelligent by Design. Precise by Nature.**
 
-为 Surge iOS 与 macOS 打造的精细化网络策略
+为 Surge iOS 与 macOS 打造的精细化网络策略配置。  
+**应用独立出口 · Smart 智能选路 · 加密 DNS · 可审计的规则体系**
 
 ![Surge](https://img.shields.io/badge/Surge-iOS%20%26%20macOS-111827?style=for-the-badge&logo=apple&logoColor=white)
 ![Routing](https://img.shields.io/badge/Routing-Rule%20Based-5b7fff?style=for-the-badge)
 ![DNS](https://img.shields.io/badge/DNS-DoH-12bfa7?style=for-the-badge)
 ![License](https://img.shields.io/badge/Resources-User%20Configured-8b5cf6?style=for-the-badge)
 
-[✦ 沉浸式交互主页 ✦](https://vaerios.github.io/Nyora/) 
+<a href="https://vaerios.github.io/Nyora/" title="进入 MYSTIC 沉浸式交互主页">
+  <img src="./assets/interactive-entry.svg" alt="进入 MYSTIC 沉浸式交互主页：动态渐变呼吸入口" width="100%" />
+</a>
+
+<sub>✦ 点击上方横幅，探索动态流程、16 首歌曲播放列表与移动端交互体验</sub>
+
+[配置下载](#配置入口) · [策略架构](#策略架构) · [应用出口](#应用级独立出口) · [分流顺序](#分流优先级) · [使用说明](#快速开始)
 
 </div>
 
 > [!TIP]
 > **MYSTIC Interactive · 交互式展示站**：
 > 点击【沉浸式交互主页】，解锁歌曲🎵
+
+> [!IMPORTANT]
+> 本仓库提供配置、规则与脚本资源，不提供代理节点。配置中的 `policy-path=订阅链接`、`http://sol/...` 和 `http://astra/...` 为需自行配置的订阅或自定义资源映射，不应假定可在其他设备直接使用。请先使用本地副本验证。
 
 ## 配置入口
 
@@ -35,6 +45,8 @@
 <div align="center">
   <img src="./assets/routing-architecture.svg" alt="Mystic 智能分流架构" width="100%" />
 </div>
+
+> 图示反映当前配置的主要策略关系，而不是完整的 Surge 内部执行时序。SVG 使用轻量 CSS 动画；在不支持动画的 GitHub 客户端中仍可作为静态图显示。
 
 Mystic 是节点订阅池；五个地区 `smart` 策略组通过 `include-other-group=Mystic` 引入并按节点名称筛选。`Proxy` 是默认代理策略，业务组既可以跟随 `Proxy`，也可以独立选择地区。
 
@@ -250,7 +262,7 @@ RULE-SET,https://raw.githubusercontent.com/Vaerios/Nyora/Surge/Rule/Ai.list,Ai
 
 ## ◇ Reference
 
-[Surge 官方网站](https://nssurge.com/) · [Surge Manual](https://manual.nssurge.com/) · [Surge iOS 6](https://nssurge.com/surge-ios-6)
+[Surge 官方网站](https://nssurge.com/) · [Surge Manual](https://manual.nssurge.com/) · [Surge iOS 6](https://nssurge.com/surge-ios-6) · [Loyalsoldier GeoIP](https://github.com/Loyalsoldier/geoip)
 
 ---
 
